@@ -1,0 +1,24 @@
+{
+  "id": "swords_10",
+  "name_en": "10 of Swords",
+  "image": "cards/swords_10.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_10.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - Swords 10.jpeg",
+  "arcana": "minor",
+  "suit": "swords",
+  "number": 10,
+  "name_ko": "소드 10",
+  "keywords_upright": [
+    "끝",
+    "배신",
+    "절망"
+  ],
+  "keywords_reversed": [
+    "회복",
+    "재기",
+    "끝나는 고통"
+  ]
+}

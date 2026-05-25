@@ -1,0 +1,27 @@
+{
+  "id": "major_03_empress",
+  "name_en": "Empress",
+  "image": "cards/major_03_empress.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_03_Empress.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 03 Empress.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 3,
+  "name_ko": "여황제",
+  "keywords_upright": [
+    "풍요",
+    "모성",
+    "자연",
+    "창조성",
+    "양육"
+  ],
+  "keywords_reversed": [
+    "의존",
+    "결핍",
+    "창조성 막힘",
+    "과보호"
+  ]
+}

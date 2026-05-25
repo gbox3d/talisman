@@ -1,0 +1,25 @@
+{
+  "id": "major_11_justice",
+  "name_en": "Justice",
+  "image": "cards/major_11_justice.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_11_Justice.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 11 Justice.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 11,
+  "name_ko": "정의",
+  "keywords_upright": [
+    "정의",
+    "공정",
+    "진실",
+    "인과"
+  ],
+  "keywords_reversed": [
+    "불공정",
+    "편견",
+    "회피"
+  ]
+}

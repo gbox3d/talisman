@@ -1,0 +1,26 @@
+{
+  "id": "major_02_high_priestess",
+  "name_en": "High Priestess",
+  "image": "cards/major_02_high_priestess.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_02_High_Priestess.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 02 High Priestess.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 2,
+  "name_ko": "여사제",
+  "keywords_upright": [
+    "직관",
+    "신비",
+    "내면의 지혜",
+    "잠재의식"
+  ],
+  "keywords_reversed": [
+    "비밀",
+    "단절",
+    "표면적 지식",
+    "혼란"
+  ]
+}

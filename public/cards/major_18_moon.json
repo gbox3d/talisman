@@ -1,0 +1,25 @@
+{
+  "id": "major_18_moon",
+  "name_en": "Moon",
+  "image": "cards/major_18_moon.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_18_Moon.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 18 Moon.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 18,
+  "name_ko": "달",
+  "keywords_upright": [
+    "환상",
+    "직관",
+    "불안",
+    "무의식"
+  ],
+  "keywords_reversed": [
+    "혼란 해소",
+    "진실 드러남",
+    "두려움 극복"
+  ]
+}

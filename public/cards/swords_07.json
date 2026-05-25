@@ -1,0 +1,24 @@
+{
+  "id": "swords_07",
+  "name_en": "7 of Swords",
+  "image": "cards/swords_07.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_07.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - Swords 07.jpeg",
+  "arcana": "minor",
+  "suit": "swords",
+  "number": 7,
+  "name_ko": "소드 7",
+  "keywords_upright": [
+    "기만",
+    "전략",
+    "회피"
+  ],
+  "keywords_reversed": [
+    "양심",
+    "자백",
+    "정직"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "swords_03",
+  "name_en": "3 of Swords",
+  "image": "cards/swords_03.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_03.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - Swords 03.jpeg",
+  "arcana": "minor",
+  "suit": "swords",
+  "number": 3,
+  "name_ko": "소드 3",
+  "keywords_upright": [
+    "상처",
+    "비탄",
+    "배신"
+  ],
+  "keywords_reversed": [
+    "치유 시작",
+    "용서",
+    "회복"
+  ]
+}

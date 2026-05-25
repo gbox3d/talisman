@@ -1,0 +1,25 @@
+{
+  "id": "major_10_wheel_of_fortune",
+  "name_en": "Wheel of Fortune",
+  "image": "cards/major_10_wheel_of_fortune.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_10_Wheel_of_Fortune.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 10 Wheel of Fortune.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 10,
+  "name_ko": "운명의 수레바퀴",
+  "keywords_upright": [
+    "변화",
+    "운명",
+    "전환점",
+    "기회"
+  ],
+  "keywords_reversed": [
+    "불운",
+    "통제 불능",
+    "정체"
+  ]
+}

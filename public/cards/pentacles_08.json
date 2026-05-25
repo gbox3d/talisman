@@ -1,0 +1,24 @@
+{
+  "id": "pentacles_08",
+  "name_en": "8 of Pentacles",
+  "image": "cards/pentacles_08.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_08.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - Pentacles 08.jpeg",
+  "arcana": "minor",
+  "suit": "pentacles",
+  "number": 8,
+  "name_ko": "펜타클 8",
+  "keywords_upright": [
+    "숙련",
+    "노력",
+    "학습"
+  ],
+  "keywords_reversed": [
+    "게으름",
+    "정체",
+    "완벽주의"
+  ]
+}

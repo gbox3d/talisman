@@ -1,0 +1,25 @@
+{
+  "id": "major_20_judgement",
+  "name_en": "Judgement",
+  "image": "cards/major_20_judgement.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_20_Judgement.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 20 Judgement.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 20,
+  "name_ko": "심판",
+  "keywords_upright": [
+    "부활",
+    "각성",
+    "평가",
+    "부름"
+  ],
+  "keywords_reversed": [
+    "자기 의심",
+    "회피",
+    "후회"
+  ]
+}

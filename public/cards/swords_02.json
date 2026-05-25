@@ -1,0 +1,23 @@
+{
+  "id": "swords_02",
+  "name_en": "2 of Swords",
+  "image": "cards/swords_02.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_02.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - Swords 02.jpeg",
+  "arcana": "minor",
+  "suit": "swords",
+  "number": 2,
+  "name_ko": "소드 2",
+  "keywords_upright": [
+    "결정 회피",
+    "균형",
+    "막다른 길"
+  ],
+  "keywords_reversed": [
+    "결정",
+    "진실 드러남"
+  ]
+}

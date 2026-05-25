@@ -1,0 +1,24 @@
+{
+  "id": "pentacles_09",
+  "name_en": "9 of Pentacles",
+  "image": "cards/pentacles_09.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_09.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - Pentacles 09.jpeg",
+  "arcana": "minor",
+  "suit": "pentacles",
+  "number": 9,
+  "name_ko": "펜타클 9",
+  "keywords_upright": [
+    "자립",
+    "풍요",
+    "성취"
+  ],
+  "keywords_reversed": [
+    "사치",
+    "외로움",
+    "의존"
+  ]
+}

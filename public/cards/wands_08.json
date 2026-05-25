@@ -1,0 +1,24 @@
+{
+  "id": "wands_08",
+  "name_en": "8 of Wands",
+  "image": "cards/wands_08.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_08.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - Wands 08.jpeg",
+  "arcana": "minor",
+  "suit": "wands",
+  "number": 8,
+  "name_ko": "완드 8",
+  "keywords_upright": [
+    "빠른 진행",
+    "행동",
+    "소식"
+  ],
+  "keywords_reversed": [
+    "지연",
+    "혼란",
+    "좌절"
+  ]
+}

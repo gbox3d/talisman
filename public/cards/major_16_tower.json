@@ -1,0 +1,25 @@
+{
+  "id": "major_16_tower",
+  "name_en": "Tower",
+  "image": "cards/major_16_tower.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_16_Tower.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 16 Tower.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 16,
+  "name_ko": "탑",
+  "keywords_upright": [
+    "급변",
+    "파괴",
+    "폭로",
+    "충격"
+  ],
+  "keywords_reversed": [
+    "위기 회피",
+    "두려움",
+    "지연된 재앙"
+  ]
+}

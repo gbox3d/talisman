@@ -1,0 +1,30 @@
+{
+  "single": {
+    "id": "single",
+    "name_ko": "1장 뽑기",
+    "description_ko": "지금 이 순간을 비추는 카드 한 장.",
+    "positions": [
+      { "key": "now", "name_ko": "지금" }
+    ]
+  },
+  "three_card": {
+    "id": "three_card",
+    "name_ko": "과거-현재-미래",
+    "description_ko": "시간 흐름을 세 장으로 풀어내는 가장 보편적인 스프레드.",
+    "positions": [
+      { "key": "past",    "name_ko": "과거" },
+      { "key": "present", "name_ko": "현재" },
+      { "key": "future",  "name_ko": "미래" }
+    ]
+  },
+  "situation_action_outcome": {
+    "id": "situation_action_outcome",
+    "name_ko": "상황-행동-결과",
+    "description_ko": "현재 상황과 취할 행동, 그 결과를 보는 세 장 스프레드.",
+    "positions": [
+      { "key": "situation", "name_ko": "상황" },
+      { "key": "action",    "name_ko": "행동" },
+      { "key": "outcome",   "name_ko": "결과" }
+    ]
+  }
+}

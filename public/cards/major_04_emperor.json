@@ -1,0 +1,27 @@
+{
+  "id": "major_04_emperor",
+  "name_en": "Emperor",
+  "image": "cards/major_04_emperor.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_04_Emperor.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 04 Emperor.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 4,
+  "name_ko": "황제",
+  "keywords_upright": [
+    "권위",
+    "안정",
+    "구조",
+    "통제",
+    "아버지상"
+  ],
+  "keywords_reversed": [
+    "독재",
+    "경직",
+    "권력 남용",
+    "미숙한 통제"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "major_08_strength",
+  "name_en": "Strength",
+  "image": "cards/major_08_strength.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_08_Strength.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 08 Strength.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 8,
+  "name_ko": "힘",
+  "keywords_upright": [
+    "용기",
+    "인내",
+    "부드러운 힘",
+    "자제"
+  ],
+  "keywords_reversed": [
+    "약함",
+    "의심",
+    "자제력 부족"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "major_14_temperance",
+  "name_en": "Temperance",
+  "image": "cards/major_14_temperance.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_14_Temperance.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 14 Temperance.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 14,
+  "name_ko": "절제",
+  "keywords_upright": [
+    "균형",
+    "절제",
+    "조화",
+    "인내"
+  ],
+  "keywords_reversed": [
+    "불균형",
+    "과잉",
+    "갈등"
+  ]
+}

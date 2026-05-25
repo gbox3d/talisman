@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+*~
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Project — Wikimedia 원본 이미지 (재현 가능: `python3 scripts/fetch_cards.py`).
+# 약 23MB. 배포 자산이 아니므로 저장소에 포함하지 않는다.
+public/cards/_raw/

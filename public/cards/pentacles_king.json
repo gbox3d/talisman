@@ -1,0 +1,24 @@
+{
+  "id": "pentacles_king",
+  "name_en": "King of Pentacles",
+  "image": "cards/pentacles_king.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_14.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - Pentacles 14.jpeg",
+  "arcana": "minor",
+  "suit": "pentacles",
+  "number": 14,
+  "name_ko": "펜타클 킹",
+  "keywords_upright": [
+    "성공",
+    "안정",
+    "풍요"
+  ],
+  "keywords_reversed": [
+    "탐욕",
+    "부패",
+    "물질주의"
+  ]
+}

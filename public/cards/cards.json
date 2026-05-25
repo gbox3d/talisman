@@ -1,0 +1,1952 @@
+{
+  "source_category": "https://commons.wikimedia.org/wiki/Category:Rider-Waite_tarot_deck_(Roses_%26_Lilies)",
+  "fetched_at": "2026-05-25T21:57:41+0900",
+  "naming_rule": {
+    "major": "major_NN_name",
+    "minor": "{suit}_{rank}",
+    "suits": [
+      "wands",
+      "cups",
+      "swords",
+      "pentacles"
+    ],
+    "ranks": [
+      "ace",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "page",
+      "knight",
+      "queen",
+      "king"
+    ]
+  },
+  "count_cards": 78,
+  "count_covers": 2,
+  "cards": [
+    {
+      "id": "major_00_fool",
+      "name_en": "Fool",
+      "image": "cards/major_00_fool.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_00_Fool.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 00 Fool.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 0,
+      "name_ko": "바보",
+      "keywords_upright": [
+        "새로운 시작",
+        "순수",
+        "자유",
+        "모험",
+        "잠재력"
+      ],
+      "keywords_reversed": [
+        "무모함",
+        "어리석음",
+        "부주의",
+        "리스크"
+      ]
+    },
+    {
+      "id": "major_01_magician",
+      "name_en": "Magician",
+      "image": "cards/major_01_magician.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_01_Magician.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 01 Magician.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 1,
+      "name_ko": "마법사",
+      "keywords_upright": [
+        "의지",
+        "창조",
+        "자신감",
+        "능력",
+        "발현"
+      ],
+      "keywords_reversed": [
+        "조작",
+        "기만",
+        "미숙",
+        "재능 낭비"
+      ]
+    },
+    {
+      "id": "major_02_high_priestess",
+      "name_en": "High Priestess",
+      "image": "cards/major_02_high_priestess.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_02_High_Priestess.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 02 High Priestess.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 2,
+      "name_ko": "여사제",
+      "keywords_upright": [
+        "직관",
+        "신비",
+        "내면의 지혜",
+        "잠재의식"
+      ],
+      "keywords_reversed": [
+        "비밀",
+        "단절",
+        "표면적 지식",
+        "혼란"
+      ]
+    },
+    {
+      "id": "major_03_empress",
+      "name_en": "Empress",
+      "image": "cards/major_03_empress.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_03_Empress.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 03 Empress.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 3,
+      "name_ko": "여황제",
+      "keywords_upright": [
+        "풍요",
+        "모성",
+        "자연",
+        "창조성",
+        "양육"
+      ],
+      "keywords_reversed": [
+        "의존",
+        "결핍",
+        "창조성 막힘",
+        "과보호"
+      ]
+    },
+    {
+      "id": "major_04_emperor",
+      "name_en": "Emperor",
+      "image": "cards/major_04_emperor.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_04_Emperor.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 04 Emperor.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 4,
+      "name_ko": "황제",
+      "keywords_upright": [
+        "권위",
+        "안정",
+        "구조",
+        "통제",
+        "아버지상"
+      ],
+      "keywords_reversed": [
+        "독재",
+        "경직",
+        "권력 남용",
+        "미숙한 통제"
+      ]
+    },
+    {
+      "id": "major_05_hierophant",
+      "name_en": "Hierophant",
+      "image": "cards/major_05_hierophant.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_05_Hierophant.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 05 Hierophant.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 5,
+      "name_ko": "교황",
+      "keywords_upright": [
+        "전통",
+        "가르침",
+        "영적 권위",
+        "관습"
+      ],
+      "keywords_reversed": [
+        "반항",
+        "새로운 접근",
+        "형식 거부"
+      ]
+    },
+    {
+      "id": "major_06_lovers",
+      "name_en": "Lovers",
+      "image": "cards/major_06_lovers.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_06_Lovers.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 06 Lovers.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 6,
+      "name_ko": "연인",
+      "keywords_upright": [
+        "사랑",
+        "조화",
+        "선택",
+        "결합"
+      ],
+      "keywords_reversed": [
+        "불화",
+        "잘못된 선택",
+        "단절"
+      ]
+    },
+    {
+      "id": "major_07_chariot",
+      "name_en": "Chariot",
+      "image": "cards/major_07_chariot.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_07_Chariot.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 07 Chariot.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 7,
+      "name_ko": "전차",
+      "keywords_upright": [
+        "의지",
+        "승리",
+        "추진력",
+        "통제"
+      ],
+      "keywords_reversed": [
+        "방향 상실",
+        "자제력 부족",
+        "좌절"
+      ]
+    },
+    {
+      "id": "major_08_strength",
+      "name_en": "Strength",
+      "image": "cards/major_08_strength.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_08_Strength.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 08 Strength.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 8,
+      "name_ko": "힘",
+      "keywords_upright": [
+        "용기",
+        "인내",
+        "부드러운 힘",
+        "자제"
+      ],
+      "keywords_reversed": [
+        "약함",
+        "의심",
+        "자제력 부족"
+      ]
+    },
+    {
+      "id": "major_09_hermit",
+      "name_en": "Hermit",
+      "image": "cards/major_09_hermit.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_09_Hermit.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 09 Hermit.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 9,
+      "name_ko": "은둔자",
+      "keywords_upright": [
+        "내면 탐색",
+        "고독",
+        "지혜",
+        "성찰"
+      ],
+      "keywords_reversed": [
+        "고립",
+        "외로움",
+        "길 잃음"
+      ]
+    },
+    {
+      "id": "major_10_wheel_of_fortune",
+      "name_en": "Wheel of Fortune",
+      "image": "cards/major_10_wheel_of_fortune.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_10_Wheel_of_Fortune.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 10 Wheel of Fortune.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 10,
+      "name_ko": "운명의 수레바퀴",
+      "keywords_upright": [
+        "변화",
+        "운명",
+        "전환점",
+        "기회"
+      ],
+      "keywords_reversed": [
+        "불운",
+        "통제 불능",
+        "정체"
+      ]
+    },
+    {
+      "id": "major_11_justice",
+      "name_en": "Justice",
+      "image": "cards/major_11_justice.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_11_Justice.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 11 Justice.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 11,
+      "name_ko": "정의",
+      "keywords_upright": [
+        "정의",
+        "공정",
+        "진실",
+        "인과"
+      ],
+      "keywords_reversed": [
+        "불공정",
+        "편견",
+        "회피"
+      ]
+    },
+    {
+      "id": "major_12_hanged_man",
+      "name_en": "Hanged Man",
+      "image": "cards/major_12_hanged_man.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_12_Hanged_Man.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 12 Hanged Man.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 12,
+      "name_ko": "매달린 사람",
+      "keywords_upright": [
+        "희생",
+        "관점 전환",
+        "멈춤",
+        "깨달음"
+      ],
+      "keywords_reversed": [
+        "무의미한 희생",
+        "정체",
+        "망설임"
+      ]
+    },
+    {
+      "id": "major_13_death",
+      "name_en": "Death",
+      "image": "cards/major_13_death.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_13_Death.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 13 Death.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 13,
+      "name_ko": "죽음",
+      "keywords_upright": [
+        "끝",
+        "변환",
+        "재생",
+        "전환"
+      ],
+      "keywords_reversed": [
+        "저항",
+        "변화 거부",
+        "정체"
+      ]
+    },
+    {
+      "id": "major_14_temperance",
+      "name_en": "Temperance",
+      "image": "cards/major_14_temperance.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_14_Temperance.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 14 Temperance.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 14,
+      "name_ko": "절제",
+      "keywords_upright": [
+        "균형",
+        "절제",
+        "조화",
+        "인내"
+      ],
+      "keywords_reversed": [
+        "불균형",
+        "과잉",
+        "갈등"
+      ]
+    },
+    {
+      "id": "major_15_devil",
+      "name_en": "Devil",
+      "image": "cards/major_15_devil.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_15_Devil.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 15 Devil.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 15,
+      "name_ko": "악마",
+      "keywords_upright": [
+        "속박",
+        "유혹",
+        "집착",
+        "물질주의"
+      ],
+      "keywords_reversed": [
+        "해방",
+        "깨달음",
+        "통제 회복"
+      ]
+    },
+    {
+      "id": "major_16_tower",
+      "name_en": "Tower",
+      "image": "cards/major_16_tower.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_16_Tower.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 16 Tower.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 16,
+      "name_ko": "탑",
+      "keywords_upright": [
+        "급변",
+        "파괴",
+        "폭로",
+        "충격"
+      ],
+      "keywords_reversed": [
+        "위기 회피",
+        "두려움",
+        "지연된 재앙"
+      ]
+    },
+    {
+      "id": "major_17_star",
+      "name_en": "Star",
+      "image": "cards/major_17_star.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_17_Star.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 17 Star.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 17,
+      "name_ko": "별",
+      "keywords_upright": [
+        "희망",
+        "영감",
+        "평온",
+        "신뢰"
+      ],
+      "keywords_reversed": [
+        "절망",
+        "자신감 상실",
+        "비관"
+      ]
+    },
+    {
+      "id": "major_18_moon",
+      "name_en": "Moon",
+      "image": "cards/major_18_moon.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_18_Moon.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 18 Moon.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 18,
+      "name_ko": "달",
+      "keywords_upright": [
+        "환상",
+        "직관",
+        "불안",
+        "무의식"
+      ],
+      "keywords_reversed": [
+        "혼란 해소",
+        "진실 드러남",
+        "두려움 극복"
+      ]
+    },
+    {
+      "id": "major_19_sun",
+      "name_en": "Sun",
+      "image": "cards/major_19_sun.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_19_Sun.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 19 Sun.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 19,
+      "name_ko": "태양",
+      "keywords_upright": [
+        "기쁨",
+        "성공",
+        "활력",
+        "명확함"
+      ],
+      "keywords_reversed": [
+        "일시적 좌절",
+        "과도한 낙관",
+        "지연된 성공"
+      ]
+    },
+    {
+      "id": "major_20_judgement",
+      "name_en": "Judgement",
+      "image": "cards/major_20_judgement.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_20_Judgement.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 20 Judgement.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 20,
+      "name_ko": "심판",
+      "keywords_upright": [
+        "부활",
+        "각성",
+        "평가",
+        "부름"
+      ],
+      "keywords_reversed": [
+        "자기 의심",
+        "회피",
+        "후회"
+      ]
+    },
+    {
+      "id": "major_21_world",
+      "name_en": "World",
+      "image": "cards/major_21_world.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_21_World.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - 21 World.jpeg",
+      "arcana": "major",
+      "suit": null,
+      "number": 21,
+      "name_ko": "세계",
+      "keywords_upright": [
+        "완성",
+        "통합",
+        "성취",
+        "여행"
+      ],
+      "keywords_reversed": [
+        "미완",
+        "지연",
+        "마무리 부족"
+      ]
+    },
+    {
+      "id": "cups_ace",
+      "name_en": "Ace of Cups",
+      "image": "cards/cups_ace.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_01.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Cups 01.jpeg",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 1,
+      "name_ko": "컵 에이스",
+      "keywords_upright": [
+        "새로운 사랑",
+        "감정의 시작",
+        "영성"
+      ],
+      "keywords_reversed": [
+        "감정 막힘",
+        "공허",
+        "거절"
+      ]
+    },
+    {
+      "id": "cups_02",
+      "name_en": "2 of Cups",
+      "image": "cards/cups_02.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_02.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Cups 02.jpeg",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 2,
+      "name_ko": "컵 2",
+      "keywords_upright": [
+        "결합",
+        "관계",
+        "화합"
+      ],
+      "keywords_reversed": [
+        "불화",
+        "단절",
+        "균형 상실"
+      ]
+    },
+    {
+      "id": "cups_03",
+      "name_en": "3 of Cups",
+      "image": "cards/cups_03.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_03.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Cups 03.jpeg",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 3,
+      "name_ko": "컵 3",
+      "keywords_upright": [
+        "축하",
+        "우정",
+        "공동체"
+      ],
+      "keywords_reversed": [
+        "과잉",
+        "가십",
+        "고립"
+      ]
+    },
+    {
+      "id": "cups_04",
+      "name_en": "4 of Cups",
+      "image": "cards/cups_04.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_04.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Cups 04.jpeg",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 4,
+      "name_ko": "컵 4",
+      "keywords_upright": [
+        "권태",
+        "명상",
+        "무관심"
+      ],
+      "keywords_reversed": [
+        "깨어남",
+        "새로운 기회 수용"
+      ]
+    },
+    {
+      "id": "cups_05",
+      "name_en": "5 of Cups",
+      "image": "cards/cups_05.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_05.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Cups 05.jpeg",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 5,
+      "name_ko": "컵 5",
+      "keywords_upright": [
+        "상실",
+        "후회",
+        "슬픔"
+      ],
+      "keywords_reversed": [
+        "회복",
+        "수용",
+        "용서"
+      ]
+    },
+    {
+      "id": "cups_06",
+      "name_en": "6 of Cups",
+      "image": "cards/cups_06.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_06.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Cups 06.jpeg",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 6,
+      "name_ko": "컵 6",
+      "keywords_upright": [
+        "향수",
+        "추억",
+        "순수"
+      ],
+      "keywords_reversed": [
+        "과거 집착",
+        "미성숙"
+      ]
+    },
+    {
+      "id": "cups_07",
+      "name_en": "7 of Cups",
+      "image": "cards/cups_07.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_07.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Cups 07.jpeg",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 7,
+      "name_ko": "컵 7",
+      "keywords_upright": [
+        "환상",
+        "선택",
+        "망상"
+      ],
+      "keywords_reversed": [
+        "현실 직시",
+        "결단",
+        "명료"
+      ]
+    },
+    {
+      "id": "cups_08",
+      "name_en": "8 of Cups",
+      "image": "cards/cups_08.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_08.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Cups 08.jpeg",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 8,
+      "name_ko": "컵 8",
+      "keywords_upright": [
+        "떠남",
+        "단념",
+        "더 큰 의미 추구"
+      ],
+      "keywords_reversed": [
+        "망설임",
+        "두려움",
+        "머무름"
+      ]
+    },
+    {
+      "id": "cups_09",
+      "name_en": "9 of Cups",
+      "image": "cards/cups_09.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_09.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Cups 09.jpeg",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 9,
+      "name_ko": "컵 9",
+      "keywords_upright": [
+        "만족",
+        "행복",
+        "소원 성취"
+      ],
+      "keywords_reversed": [
+        "표면적 만족",
+        "자만"
+      ]
+    },
+    {
+      "id": "cups_10",
+      "name_en": "10 of Cups",
+      "image": "cards/cups_10.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_10.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Cups 10.jpeg",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 10,
+      "name_ko": "컵 10",
+      "keywords_upright": [
+        "가족 행복",
+        "충만",
+        "조화"
+      ],
+      "keywords_reversed": [
+        "가정 불화",
+        "단절"
+      ]
+    },
+    {
+      "id": "cups_page",
+      "name_en": "Page of Cups",
+      "image": "cards/cups_page.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_11.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Cups 11.jpeg",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 11,
+      "name_ko": "컵 페이지",
+      "keywords_upright": [
+        "감수성",
+        "영감",
+        "메시지"
+      ],
+      "keywords_reversed": [
+        "감정 미성숙",
+        "비현실적"
+      ]
+    },
+    {
+      "id": "cups_knight",
+      "name_en": "Knight of Cups",
+      "image": "cards/cups_knight.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_12.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Cups 12.jpeg",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 12,
+      "name_ko": "컵 나이트",
+      "keywords_upright": [
+        "로맨스",
+        "매혹",
+        "제안"
+      ],
+      "keywords_reversed": [
+        "변덕",
+        "비현실",
+        "실망"
+      ]
+    },
+    {
+      "id": "cups_queen",
+      "name_en": "Queen of Cups",
+      "image": "cards/cups_queen.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_13.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Cups 13.jpeg",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 13,
+      "name_ko": "컵 퀸",
+      "keywords_upright": [
+        "공감",
+        "직관",
+        "정서적 안정"
+      ],
+      "keywords_reversed": [
+        "의존",
+        "감정 기복",
+        "자기 연민"
+      ]
+    },
+    {
+      "id": "cups_king",
+      "name_en": "King of Cups",
+      "image": "cards/cups_king.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_14.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Cups 14.jpeg",
+      "arcana": "minor",
+      "suit": "cups",
+      "number": 14,
+      "name_ko": "컵 킹",
+      "keywords_upright": [
+        "정서적 균형",
+        "지혜",
+        "자비"
+      ],
+      "keywords_reversed": [
+        "감정 억압",
+        "조종",
+        "변덕"
+      ]
+    },
+    {
+      "id": "pentacles_ace",
+      "name_en": "Ace of Pentacles",
+      "image": "cards/pentacles_ace.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_01.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Pentacles 01.jpeg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 1,
+      "name_ko": "펜타클 에이스",
+      "keywords_upright": [
+        "새로운 기회",
+        "번영",
+        "안정"
+      ],
+      "keywords_reversed": [
+        "기회 상실",
+        "결핍",
+        "불안정"
+      ]
+    },
+    {
+      "id": "pentacles_02",
+      "name_en": "2 of Pentacles",
+      "image": "cards/pentacles_02.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_02.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Pentacles 02.jpeg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 2,
+      "name_ko": "펜타클 2",
+      "keywords_upright": [
+        "균형",
+        "적응",
+        "우선순위"
+      ],
+      "keywords_reversed": [
+        "과부하",
+        "불균형",
+        "혼란"
+      ]
+    },
+    {
+      "id": "pentacles_03",
+      "name_en": "3 of Pentacles",
+      "image": "cards/pentacles_03.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_03.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Pentacles 03.jpeg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 3,
+      "name_ko": "펜타클 3",
+      "keywords_upright": [
+        "협업",
+        "기술",
+        "인정"
+      ],
+      "keywords_reversed": [
+        "협업 부족",
+        "미숙",
+        "비효율"
+      ]
+    },
+    {
+      "id": "pentacles_04",
+      "name_en": "4 of Pentacles",
+      "image": "cards/pentacles_04.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_04.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Pentacles 04.jpeg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 4,
+      "name_ko": "펜타클 4",
+      "keywords_upright": [
+        "안정",
+        "보존",
+        "통제"
+      ],
+      "keywords_reversed": [
+        "인색",
+        "집착",
+        "손실 두려움"
+      ]
+    },
+    {
+      "id": "pentacles_05",
+      "name_en": "5 of Pentacles",
+      "image": "cards/pentacles_05.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_05.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Pentacles 05.jpeg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 5,
+      "name_ko": "펜타클 5",
+      "keywords_upright": [
+        "결핍",
+        "고난",
+        "소외"
+      ],
+      "keywords_reversed": [
+        "회복",
+        "도움",
+        "새로운 기회"
+      ]
+    },
+    {
+      "id": "pentacles_06",
+      "name_en": "6 of Pentacles",
+      "image": "cards/pentacles_06.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_06.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Pentacles 06.jpeg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 6,
+      "name_ko": "펜타클 6",
+      "keywords_upright": [
+        "나눔",
+        "관대",
+        "균형"
+      ],
+      "keywords_reversed": [
+        "불공정",
+        "빚",
+        "일방적 관계"
+      ]
+    },
+    {
+      "id": "pentacles_07",
+      "name_en": "7 of Pentacles",
+      "image": "cards/pentacles_07.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_07.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Pentacles 07.jpeg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 7,
+      "name_ko": "펜타클 7",
+      "keywords_upright": [
+        "인내",
+        "평가",
+        "장기 투자"
+      ],
+      "keywords_reversed": [
+        "조급함",
+        "헛수고",
+        "보상 부족"
+      ]
+    },
+    {
+      "id": "pentacles_08",
+      "name_en": "8 of Pentacles",
+      "image": "cards/pentacles_08.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_08.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Pentacles 08.jpeg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 8,
+      "name_ko": "펜타클 8",
+      "keywords_upright": [
+        "숙련",
+        "노력",
+        "학습"
+      ],
+      "keywords_reversed": [
+        "게으름",
+        "정체",
+        "완벽주의"
+      ]
+    },
+    {
+      "id": "pentacles_09",
+      "name_en": "9 of Pentacles",
+      "image": "cards/pentacles_09.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_09.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Pentacles 09.jpeg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 9,
+      "name_ko": "펜타클 9",
+      "keywords_upright": [
+        "자립",
+        "풍요",
+        "성취"
+      ],
+      "keywords_reversed": [
+        "사치",
+        "외로움",
+        "의존"
+      ]
+    },
+    {
+      "id": "pentacles_10",
+      "name_en": "10 of Pentacles",
+      "image": "cards/pentacles_10.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_10.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Pentacles 10.jpeg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 10,
+      "name_ko": "펜타클 10",
+      "keywords_upright": [
+        "유산",
+        "가족",
+        "부"
+      ],
+      "keywords_reversed": [
+        "가족 분쟁",
+        "손실",
+        "불안정"
+      ]
+    },
+    {
+      "id": "pentacles_page",
+      "name_en": "Page of Pentacles",
+      "image": "cards/pentacles_page.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_11.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Pentacles 11.jpeg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 11,
+      "name_ko": "펜타클 페이지",
+      "keywords_upright": [
+        "학습",
+        "새로운 기회",
+        "성실"
+      ],
+      "keywords_reversed": [
+        "비현실",
+        "미루기",
+        "기회 놓침"
+      ]
+    },
+    {
+      "id": "pentacles_knight",
+      "name_en": "Knight of Pentacles",
+      "image": "cards/pentacles_knight.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_12.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Pentacles 12.jpeg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 12,
+      "name_ko": "펜타클 나이트",
+      "keywords_upright": [
+        "성실",
+        "책임",
+        "꾸준함"
+      ],
+      "keywords_reversed": [
+        "정체",
+        "보수성",
+        "지루함"
+      ]
+    },
+    {
+      "id": "pentacles_queen",
+      "name_en": "Queen of Pentacles",
+      "image": "cards/pentacles_queen.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_13.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Pentacles 13.jpeg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 13,
+      "name_ko": "펜타클 퀸",
+      "keywords_upright": [
+        "풍요",
+        "실용",
+        "양육"
+      ],
+      "keywords_reversed": [
+        "자기소홀",
+        "물질주의",
+        "의존"
+      ]
+    },
+    {
+      "id": "pentacles_king",
+      "name_en": "King of Pentacles",
+      "image": "cards/pentacles_king.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_14.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Pentacles 14.jpeg",
+      "arcana": "minor",
+      "suit": "pentacles",
+      "number": 14,
+      "name_ko": "펜타클 킹",
+      "keywords_upright": [
+        "성공",
+        "안정",
+        "풍요"
+      ],
+      "keywords_reversed": [
+        "탐욕",
+        "부패",
+        "물질주의"
+      ]
+    },
+    {
+      "id": "swords_ace",
+      "name_en": "Ace of Swords",
+      "image": "cards/swords_ace.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_01.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Swords 01.jpeg",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 1,
+      "name_ko": "소드 에이스",
+      "keywords_upright": [
+        "명확함",
+        "진실",
+        "돌파"
+      ],
+      "keywords_reversed": [
+        "혼란",
+        "잘못된 판단",
+        "정체"
+      ]
+    },
+    {
+      "id": "swords_02",
+      "name_en": "2 of Swords",
+      "image": "cards/swords_02.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_02.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Swords 02.jpeg",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 2,
+      "name_ko": "소드 2",
+      "keywords_upright": [
+        "결정 회피",
+        "균형",
+        "막다른 길"
+      ],
+      "keywords_reversed": [
+        "결정",
+        "진실 드러남"
+      ]
+    },
+    {
+      "id": "swords_03",
+      "name_en": "3 of Swords",
+      "image": "cards/swords_03.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_03.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Swords 03.jpeg",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 3,
+      "name_ko": "소드 3",
+      "keywords_upright": [
+        "상처",
+        "비탄",
+        "배신"
+      ],
+      "keywords_reversed": [
+        "치유 시작",
+        "용서",
+        "회복"
+      ]
+    },
+    {
+      "id": "swords_04",
+      "name_en": "4 of Swords",
+      "image": "cards/swords_04.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_04.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Swords 04.jpeg",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 4,
+      "name_ko": "소드 4",
+      "keywords_upright": [
+        "휴식",
+        "회복",
+        "명상"
+      ],
+      "keywords_reversed": [
+        "소진",
+        "번아웃",
+        "회피"
+      ]
+    },
+    {
+      "id": "swords_05",
+      "name_en": "5 of Swords",
+      "image": "cards/swords_05.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_05.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Swords 05.jpeg",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 5,
+      "name_ko": "소드 5",
+      "keywords_upright": [
+        "갈등",
+        "패배",
+        "자존심"
+      ],
+      "keywords_reversed": [
+        "화해",
+        "후회",
+        "양보"
+      ]
+    },
+    {
+      "id": "swords_06",
+      "name_en": "6 of Swords",
+      "image": "cards/swords_06.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_06.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Swords 06.jpeg",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 6,
+      "name_ko": "소드 6",
+      "keywords_upright": [
+        "이동",
+        "전환",
+        "평온으로"
+      ],
+      "keywords_reversed": [
+        "정체",
+        "발이 묶임"
+      ]
+    },
+    {
+      "id": "swords_07",
+      "name_en": "7 of Swords",
+      "image": "cards/swords_07.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_07.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Swords 07.jpeg",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 7,
+      "name_ko": "소드 7",
+      "keywords_upright": [
+        "기만",
+        "전략",
+        "회피"
+      ],
+      "keywords_reversed": [
+        "양심",
+        "자백",
+        "정직"
+      ]
+    },
+    {
+      "id": "swords_08",
+      "name_en": "8 of Swords",
+      "image": "cards/swords_08.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_08.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Swords 08.jpeg",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 8,
+      "name_ko": "소드 8",
+      "keywords_upright": [
+        "속박",
+        "무력감",
+        "자기 제한"
+      ],
+      "keywords_reversed": [
+        "해방",
+        "시야 회복"
+      ]
+    },
+    {
+      "id": "swords_09",
+      "name_en": "9 of Swords",
+      "image": "cards/swords_09.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_09.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Swords 09.jpeg",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 9,
+      "name_ko": "소드 9",
+      "keywords_upright": [
+        "불안",
+        "악몽",
+        "죄책감"
+      ],
+      "keywords_reversed": [
+        "회복",
+        "희망",
+        "두려움 직면"
+      ]
+    },
+    {
+      "id": "swords_10",
+      "name_en": "10 of Swords",
+      "image": "cards/swords_10.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_10.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Swords 10.jpeg",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 10,
+      "name_ko": "소드 10",
+      "keywords_upright": [
+        "끝",
+        "배신",
+        "절망"
+      ],
+      "keywords_reversed": [
+        "회복",
+        "재기",
+        "끝나는 고통"
+      ]
+    },
+    {
+      "id": "swords_page",
+      "name_en": "Page of Swords",
+      "image": "cards/swords_page.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_11.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Swords 11.jpeg",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 11,
+      "name_ko": "소드 페이지",
+      "keywords_upright": [
+        "호기심",
+        "경계",
+        "진실 추구"
+      ],
+      "keywords_reversed": [
+        "가십",
+        "냉소",
+        "잔꾀"
+      ]
+    },
+    {
+      "id": "swords_knight",
+      "name_en": "Knight of Swords",
+      "image": "cards/swords_knight.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_12.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Swords 12.jpeg",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 12,
+      "name_ko": "소드 나이트",
+      "keywords_upright": [
+        "추진",
+        "야망",
+        "직진"
+      ],
+      "keywords_reversed": [
+        "충동",
+        "무모함",
+        "공격성"
+      ]
+    },
+    {
+      "id": "swords_queen",
+      "name_en": "Queen of Swords",
+      "image": "cards/swords_queen.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_13.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Swords 13.jpeg",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 13,
+      "name_ko": "소드 퀸",
+      "keywords_upright": [
+        "통찰",
+        "독립",
+        "명료"
+      ],
+      "keywords_reversed": [
+        "냉정",
+        "비판",
+        "고립"
+      ]
+    },
+    {
+      "id": "swords_king",
+      "name_en": "King of Swords",
+      "image": "cards/swords_king.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_14.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Swords 14.jpeg",
+      "arcana": "minor",
+      "suit": "swords",
+      "number": 14,
+      "name_ko": "소드 킹",
+      "keywords_upright": [
+        "지성",
+        "권위",
+        "공정"
+      ],
+      "keywords_reversed": [
+        "독선",
+        "냉혹",
+        "권력 남용"
+      ]
+    },
+    {
+      "id": "wands_ace",
+      "name_en": "Ace of Wands",
+      "image": "cards/wands_ace.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_01.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Wands 01.jpeg",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 1,
+      "name_ko": "완드 에이스",
+      "keywords_upright": [
+        "영감",
+        "새로운 시작",
+        "활력",
+        "잠재력"
+      ],
+      "keywords_reversed": [
+        "지연",
+        "동기 부족",
+        "의욕 상실"
+      ]
+    },
+    {
+      "id": "wands_02",
+      "name_en": "2 of Wands",
+      "image": "cards/wands_02.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_02.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Wands 02.jpeg",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 2,
+      "name_ko": "완드 2",
+      "keywords_upright": [
+        "계획",
+        "결정",
+        "미래 비전"
+      ],
+      "keywords_reversed": [
+        "두려움",
+        "미루기",
+        "시야 부족"
+      ]
+    },
+    {
+      "id": "wands_03",
+      "name_en": "3 of Wands",
+      "image": "cards/wands_03.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_03.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Wands 03.jpeg",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 3,
+      "name_ko": "완드 3",
+      "keywords_upright": [
+        "확장",
+        "비전 실현",
+        "진취"
+      ],
+      "keywords_reversed": [
+        "좌절",
+        "지연",
+        "시야 좁음"
+      ]
+    },
+    {
+      "id": "wands_04",
+      "name_en": "4 of Wands",
+      "image": "cards/wands_04.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_04.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Wands 04.jpeg",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 4,
+      "name_ko": "완드 4",
+      "keywords_upright": [
+        "축하",
+        "화합",
+        "안정",
+        "가정"
+      ],
+      "keywords_reversed": [
+        "일시적 균열",
+        "형식적 화합"
+      ]
+    },
+    {
+      "id": "wands_05",
+      "name_en": "5 of Wands",
+      "image": "cards/wands_05.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_05.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Wands 05.jpeg",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 5,
+      "name_ko": "완드 5",
+      "keywords_upright": [
+        "경쟁",
+        "갈등",
+        "다툼"
+      ],
+      "keywords_reversed": [
+        "갈등 해소",
+        "협력",
+        "회피"
+      ]
+    },
+    {
+      "id": "wands_06",
+      "name_en": "6 of Wands",
+      "image": "cards/wands_06.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_06.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Wands 06.jpeg",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 6,
+      "name_ko": "완드 6",
+      "keywords_upright": [
+        "승리",
+        "인정",
+        "성공"
+      ],
+      "keywords_reversed": [
+        "실패",
+        "자만",
+        "지연된 승리"
+      ]
+    },
+    {
+      "id": "wands_07",
+      "name_en": "7 of Wands",
+      "image": "cards/wands_07.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_07.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Wands 07.jpeg",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 7,
+      "name_ko": "완드 7",
+      "keywords_upright": [
+        "방어",
+        "도전 극복",
+        "용기"
+      ],
+      "keywords_reversed": [
+        "압도",
+        "굴복",
+        "자신감 부족"
+      ]
+    },
+    {
+      "id": "wands_08",
+      "name_en": "8 of Wands",
+      "image": "cards/wands_08.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_08.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Wands 08.jpeg",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 8,
+      "name_ko": "완드 8",
+      "keywords_upright": [
+        "빠른 진행",
+        "행동",
+        "소식"
+      ],
+      "keywords_reversed": [
+        "지연",
+        "혼란",
+        "좌절"
+      ]
+    },
+    {
+      "id": "wands_09",
+      "name_en": "9 of Wands",
+      "image": "cards/wands_09.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_09.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Wands 09.jpeg",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 9,
+      "name_ko": "완드 9",
+      "keywords_upright": [
+        "인내",
+        "회복력",
+        "경계"
+      ],
+      "keywords_reversed": [
+        "소진",
+        "방어 과잉",
+        "편집증"
+      ]
+    },
+    {
+      "id": "wands_10",
+      "name_en": "10 of Wands",
+      "image": "cards/wands_10.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_10.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Wands 10.jpeg",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 10,
+      "name_ko": "완드 10",
+      "keywords_upright": [
+        "부담",
+        "책임",
+        "과중"
+      ],
+      "keywords_reversed": [
+        "해방",
+        "위임",
+        "짐 내려놓기"
+      ]
+    },
+    {
+      "id": "wands_page",
+      "name_en": "Page of Wands",
+      "image": "cards/wands_page.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_11.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Wands 11.jpeg",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 11,
+      "name_ko": "완드 페이지",
+      "keywords_upright": [
+        "호기심",
+        "새로운 아이디어",
+        "모험가 정신"
+      ],
+      "keywords_reversed": [
+        "미성숙",
+        "산만",
+        "의욕 부재"
+      ]
+    },
+    {
+      "id": "wands_knight",
+      "name_en": "Knight of Wands",
+      "image": "cards/wands_knight.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_12.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Wands 12.jpeg",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 12,
+      "name_ko": "완드 나이트",
+      "keywords_upright": [
+        "모험",
+        "추진력",
+        "열정"
+      ],
+      "keywords_reversed": [
+        "충동",
+        "무모함",
+        "좌절"
+      ]
+    },
+    {
+      "id": "wands_queen",
+      "name_en": "Queen of Wands",
+      "image": "cards/wands_queen.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_13.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Wands 13.jpeg",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 13,
+      "name_ko": "완드 퀸",
+      "keywords_upright": [
+        "자신감",
+        "매력",
+        "결단력"
+      ],
+      "keywords_reversed": [
+        "질투",
+        "변덕",
+        "자기중심"
+      ]
+    },
+    {
+      "id": "wands_king",
+      "name_en": "King of Wands",
+      "image": "cards/wands_king.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_14.jpeg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+      "original_filename": "RWS1909 - Wands 14.jpeg",
+      "arcana": "minor",
+      "suit": "wands",
+      "number": 14,
+      "name_ko": "완드 킹",
+      "keywords_upright": [
+        "비전",
+        "리더십",
+        "카리스마"
+      ],
+      "keywords_reversed": [
+        "독재",
+        "충동적 결정",
+        "무모함"
+      ]
+    }
+  ],
+  "covers": [
+    {
+      "id": "cover_cropped",
+      "name_en": "Roses and Lilies (cropped)",
+      "image": "cards/cover_cropped.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Waite%E2%80%93Smith_Tarot_Roses_and_Lilies_cropped.jpg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "Unknown author, possibly Pamela Colman Smith",
+      "original_filename": "Waite–Smith Tarot Roses and Lilies cropped.jpg"
+    },
+    {
+      "id": "cover_full",
+      "name_en": "Roses and Lilies (full)",
+      "image": "cards/cover_full.jpeg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Waite%E2%80%93Smith_Tarot_Roses_and_Lilies.jpg",
+      "license": "Public domain",
+      "usage_terms": "Public domain",
+      "artist_html": "Unknown author<span style=\"display: none;\">Unknown author</span>, possibly Pamela Colman Smith",
+      "original_filename": "Waite–Smith Tarot Roses and Lilies.jpg"
+    }
+  ]
+}

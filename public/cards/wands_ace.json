@@ -1,0 +1,25 @@
+{
+  "id": "wands_ace",
+  "name_en": "Ace of Wands",
+  "image": "cards/wands_ace.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_01.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - Wands 01.jpeg",
+  "arcana": "minor",
+  "suit": "wands",
+  "number": 1,
+  "name_ko": "완드 에이스",
+  "keywords_upright": [
+    "영감",
+    "새로운 시작",
+    "활력",
+    "잠재력"
+  ],
+  "keywords_reversed": [
+    "지연",
+    "동기 부족",
+    "의욕 상실"
+  ]
+}

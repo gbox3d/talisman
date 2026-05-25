@@ -1,0 +1,25 @@
+{
+  "id": "major_12_hanged_man",
+  "name_en": "Hanged Man",
+  "image": "cards/major_12_hanged_man.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_12_Hanged_Man.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 12 Hanged Man.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 12,
+  "name_ko": "매달린 사람",
+  "keywords_upright": [
+    "희생",
+    "관점 전환",
+    "멈춤",
+    "깨달음"
+  ],
+  "keywords_reversed": [
+    "무의미한 희생",
+    "정체",
+    "망설임"
+  ]
+}

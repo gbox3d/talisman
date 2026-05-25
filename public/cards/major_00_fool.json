@@ -1,0 +1,27 @@
+{
+  "id": "major_00_fool",
+  "name_en": "Fool",
+  "image": "cards/major_00_fool.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_00_Fool.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 00 Fool.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 0,
+  "name_ko": "바보",
+  "keywords_upright": [
+    "새로운 시작",
+    "순수",
+    "자유",
+    "모험",
+    "잠재력"
+  ],
+  "keywords_reversed": [
+    "무모함",
+    "어리석음",
+    "부주의",
+    "리스크"
+  ]
+}

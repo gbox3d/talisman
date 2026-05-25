@@ -1,0 +1,24 @@
+{
+  "id": "pentacles_05",
+  "name_en": "5 of Pentacles",
+  "image": "cards/pentacles_05.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Pentacles_05.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - Pentacles 05.jpeg",
+  "arcana": "minor",
+  "suit": "pentacles",
+  "number": 5,
+  "name_ko": "펜타클 5",
+  "keywords_upright": [
+    "결핍",
+    "고난",
+    "소외"
+  ],
+  "keywords_reversed": [
+    "회복",
+    "도움",
+    "새로운 기회"
+  ]
+}

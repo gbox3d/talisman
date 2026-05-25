@@ -1,0 +1,25 @@
+{
+  "id": "major_05_hierophant",
+  "name_en": "Hierophant",
+  "image": "cards/major_05_hierophant.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_05_Hierophant.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 05 Hierophant.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 5,
+  "name_ko": "교황",
+  "keywords_upright": [
+    "전통",
+    "가르침",
+    "영적 권위",
+    "관습"
+  ],
+  "keywords_reversed": [
+    "반항",
+    "새로운 접근",
+    "형식 거부"
+  ]
+}

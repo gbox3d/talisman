@@ -1,0 +1,24 @@
+{
+  "id": "swords_05",
+  "name_en": "5 of Swords",
+  "image": "cards/swords_05.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Swords_05.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - Swords 05.jpeg",
+  "arcana": "minor",
+  "suit": "swords",
+  "number": 5,
+  "name_ko": "소드 5",
+  "keywords_upright": [
+    "갈등",
+    "패배",
+    "자존심"
+  ],
+  "keywords_reversed": [
+    "화해",
+    "후회",
+    "양보"
+  ]
+}

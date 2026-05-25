@@ -1,0 +1,24 @@
+{
+  "id": "wands_05",
+  "name_en": "5 of Wands",
+  "image": "cards/wands_05.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_05.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - Wands 05.jpeg",
+  "arcana": "minor",
+  "suit": "wands",
+  "number": 5,
+  "name_ko": "완드 5",
+  "keywords_upright": [
+    "경쟁",
+    "갈등",
+    "다툼"
+  ],
+  "keywords_reversed": [
+    "갈등 해소",
+    "협력",
+    "회피"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "cups_02",
+  "name_en": "2 of Cups",
+  "image": "cards/cups_02.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_02.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - Cups 02.jpeg",
+  "arcana": "minor",
+  "suit": "cups",
+  "number": 2,
+  "name_ko": "컵 2",
+  "keywords_upright": [
+    "결합",
+    "관계",
+    "화합"
+  ],
+  "keywords_reversed": [
+    "불화",
+    "단절",
+    "균형 상실"
+  ]
+}

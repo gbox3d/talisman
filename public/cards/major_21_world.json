@@ -1,0 +1,25 @@
+{
+  "id": "major_21_world",
+  "name_en": "World",
+  "image": "cards/major_21_world.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_21_World.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 21 World.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 21,
+  "name_ko": "세계",
+  "keywords_upright": [
+    "완성",
+    "통합",
+    "성취",
+    "여행"
+  ],
+  "keywords_reversed": [
+    "미완",
+    "지연",
+    "마무리 부족"
+  ]
+}

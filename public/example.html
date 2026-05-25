@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>웹 타로 카드 — API 사용 예제</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem 1rem;
+      background: #0f0d1a;
+      color: #efe8da;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      line-height: 1.5;
+    }
+    main { max-width: 920px; margin: 0 auto; }
+    h1 { margin: 0 0 0.3rem; color: #c9a96e; }
+    h2 { margin: 2.2rem 0 0.8rem; color: #c9a96e; font-size: 1.1rem; }
+    .lede { color: #9088a8; margin: 0 0 1.5rem; }
+    section {
+      background: #1b1830;
+      border: 1px solid #2e2949;
+      border-radius: 0.6rem;
+      padding: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    p { margin: 0.4rem 0; }
+    pre, code {
+      font-family: ui-monospace, "SF Mono", Menlo, monospace;
+      font-size: 0.84rem;
+      background: #0a0814;
+      color: #b5acca;
+      padding: 0.1rem 0.35rem;
+      border-radius: 0.25rem;
+    }
+    pre {
+      padding: 0.9rem;
+      overflow-x: auto;
+      white-space: pre;
+      border: 1px solid #2e2949;
+    }
+    button {
+      background: #2a2350;
+      color: #efe8da;
+      border: 1px solid #3a3460;
+      padding: 0.5rem 0.9rem;
+      border-radius: 0.4rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    button:hover { border-color: #c9a96e; }
+    .out {
+      margin-top: 0.8rem;
+      background: #0a0814;
+      border: 1px solid #2e2949;
+      border-radius: 0.4rem;
+      padding: 0.9rem;
+      min-height: 4rem;
+      color: #b5acca;
+      font-family: ui-monospace, "SF Mono", Menlo, monospace;
+      font-size: 0.82rem;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+    .cards-out {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 0.8rem;
+    }
+    .cards-out figure { margin: 0; text-align: center; }
+    .cards-out img { width: 110px; border-radius: 0.3rem; }
+    .cards-out figcaption { color: #9088a8; font-size: 0.78rem; margin-top: 0.3rem; }
+    a { color: #c9a96e; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>웹 타로 카드 — API 사용 예제</h1>
+    <p class="lede">
+      이 페이지는 <code>/taro</code>에 정적으로 호스팅된 타로 카드 데이터를
+      외부 코드가 어떻게 호출하는지 보여주는 예제입니다.
+      백엔드 API는 없으며, 모든 데이터는 정적 JSON 파일입니다.
+      CORS는 <code>*</code>로 열려 있어 다른 origin에서도 동일하게 호출할 수 있습니다.
+    </p>
+
+    <section>
+      <h2>1) Tarot 라이브러리로 한 줄 호출 (권장)</h2>
+      <p>같은 페이지에서 ESM 모듈로 불러와 <code>draw(n)</code> / <code>drawSpread(id)</code>를 호출합니다.</p>
+      <pre>&lt;script type="module"&gt;
+import { Tarot } from '/taro/tarot.js';
+
+const tarot = await Tarot.load();
+const result = tarot.drawSpread('three_card');   // 또는 tarot.draw(1)
+console.log(result);
+&lt;/script&gt;</pre>
+      <button id="btn-lib">drawSpread('three_card') 실행</button>
+      <div id="lib-cards" class="cards-out"></div>
+      <pre id="lib-out" class="out">아직 실행 안 함</pre>
+    </section>
+
+    <section>
+      <h2>2) 라이브러리 없이 순수 fetch로 호출 (API처럼)</h2>
+      <p>라이브러리를 안 쓰고 JSON만 받아도 됩니다. 카드를 뽑는 로직은 호출 측에서 직접 구현.</p>
+      <pre>const res  = await fetch('/taro/cards/cards.json');
+const data = await res.json();
+const pick = data.cards[Math.floor(Math.random() * data.cards.length)];
+
+console.log(pick.id, pick.name_ko, pick.keywords_upright);
+// 이미지 URL은 'cards/...' 상대 경로이므로 base와 결합:
+const imageUrl = new URL(pick.image, 'https://your-host/taro/').href;</pre>
+      <button id="btn-fetch">fetch + 무작위 1장 실행</button>
+      <div id="fetch-cards" class="cards-out"></div>
+      <pre id="fetch-out" class="out">아직 실행 안 함</pre>
+    </section>
+
+    <section>
+      <h2>3) 다른 도메인 / 다른 페이지에서 호출</h2>
+      <p>완전히 별개 origin에서도 동일하게 동작합니다 (CORS 열려 있음):</p>
+      <pre>// 다른 사이트의 페이지에서:
+const url = 'http://&lt;이 서버의 호스트&gt;:21080/taro/cards/cards.json';
+const data = await (await fetch(url)).json();
+console.log(data.count_cards, '장 로드');</pre>
+      <p>또는 라이브러리를 절대 URL로 import:</p>
+      <pre>const { Tarot } = await import('http://&lt;호스트&gt;:21080/taro/tarot.js');
+const tarot = await Tarot.load();
+console.log(tarot.draw(1));</pre>
+    </section>
+
+    <p style="margin-top:2.5rem;color:#9088a8;font-size:0.85rem;">
+      메인 데모 페이지: <a href="./">/taro/</a> · 라이브러리 소스: <a href="./tarot.js">/taro/tarot.js</a> · 카드 데이터: <a href="./cards/cards.json">/taro/cards/cards.json</a>
+    </p>
+  </main>
+
+  <script type="module">
+    import { Tarot } from './tarot.js';
+    const tarot = await Tarot.load();
+
+    // 예제 1 — 라이브러리 사용
+    document.getElementById('btn-lib').addEventListener('click', () => {
+      const result = tarot.drawSpread('three_card');
+      renderCards('lib-cards', result.positions.map(p => ({ label: p.name_ko, card: p.card })));
+      document.getElementById('lib-out').textContent = JSON.stringify(
+        result.positions.map(p => ({
+          position: p.key,
+          id: p.card.id,
+          name_ko: p.card.name_ko,
+          orientation: p.card.orientation,
+          keywords: p.card.keywords,
+          image_url: p.card.image_url,
+        })),
+        null, 2
+      );
+    });
+
+    // 예제 2 — 순수 fetch
+    document.getElementById('btn-fetch').addEventListener('click', async () => {
+      const res = await fetch('./cards/cards.json');
+      const data = await res.json();
+      const card = data.cards[Math.floor(Math.random() * data.cards.length)];
+      const imageUrl = new URL(card.image, location.href).href;
+      renderCards('fetch-cards', [{ label: '뽑힌 카드', card: { ...card, image_url: imageUrl, orientation: 'upright' } }]);
+      document.getElementById('fetch-out').textContent = JSON.stringify(
+        { id: card.id, name_ko: card.name_ko, keywords_upright: card.keywords_upright, image_url: imageUrl },
+        null, 2
+      );
+    });
+
+    function renderCards(containerId, items) {
+      const $c = document.getElementById(containerId);
+      $c.innerHTML = '';
+      for (const { label, card } of items) {
+        const fig = document.createElement('figure');
+        const img = document.createElement('img');
+        img.src = card.image_url;
+        img.alt = card.name_en ?? card.id;
+        if (card.orientation === 'reversed') img.style.transform = 'rotate(180deg)';
+        const cap = document.createElement('figcaption');
+        cap.textContent = `${label} · ${card.name_ko ?? card.id}`;
+        fig.append(img, cap);
+        $c.append(fig);
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "id": "major_13_death",
+  "name_en": "Death",
+  "image": "cards/major_13_death.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_13_Death.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 13 Death.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 13,
+  "name_ko": "죽음",
+  "keywords_upright": [
+    "끝",
+    "변환",
+    "재생",
+    "전환"
+  ],
+  "keywords_reversed": [
+    "저항",
+    "변화 거부",
+    "정체"
+  ]
+}

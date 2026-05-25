@@ -1,0 +1,24 @@
+{
+  "id": "cups_ace",
+  "name_en": "Ace of Cups",
+  "image": "cards/cups_ace.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Cups_01.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - Cups 01.jpeg",
+  "arcana": "minor",
+  "suit": "cups",
+  "number": 1,
+  "name_ko": "컵 에이스",
+  "keywords_upright": [
+    "새로운 사랑",
+    "감정의 시작",
+    "영성"
+  ],
+  "keywords_reversed": [
+    "감정 막힘",
+    "공허",
+    "거절"
+  ]
+}

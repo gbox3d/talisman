@@ -1,0 +1,25 @@
+{
+  "id": "major_17_star",
+  "name_en": "Star",
+  "image": "cards/major_17_star.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_17_Star.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 17 Star.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 17,
+  "name_ko": "별",
+  "keywords_upright": [
+    "희망",
+    "영감",
+    "평온",
+    "신뢰"
+  ],
+  "keywords_reversed": [
+    "절망",
+    "자신감 상실",
+    "비관"
+  ]
+}

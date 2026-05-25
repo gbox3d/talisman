@@ -1,0 +1,25 @@
+{
+  "id": "major_15_devil",
+  "name_en": "Devil",
+  "image": "cards/major_15_devil.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_15_Devil.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 15 Devil.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 15,
+  "name_ko": "악마",
+  "keywords_upright": [
+    "속박",
+    "유혹",
+    "집착",
+    "물질주의"
+  ],
+  "keywords_reversed": [
+    "해방",
+    "깨달음",
+    "통제 회복"
+  ]
+}

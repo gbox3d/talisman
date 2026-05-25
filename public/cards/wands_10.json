@@ -1,0 +1,24 @@
+{
+  "id": "wands_10",
+  "name_en": "10 of Wands",
+  "image": "cards/wands_10.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_10.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - Wands 10.jpeg",
+  "arcana": "minor",
+  "suit": "wands",
+  "number": 10,
+  "name_ko": "완드 10",
+  "keywords_upright": [
+    "부담",
+    "책임",
+    "과중"
+  ],
+  "keywords_reversed": [
+    "해방",
+    "위임",
+    "짐 내려놓기"
+  ]
+}

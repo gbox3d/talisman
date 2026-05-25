@@ -1,0 +1,25 @@
+{
+  "id": "major_19_sun",
+  "name_en": "Sun",
+  "image": "cards/major_19_sun.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_19_Sun.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 19 Sun.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 19,
+  "name_ko": "태양",
+  "keywords_upright": [
+    "기쁨",
+    "성공",
+    "활력",
+    "명확함"
+  ],
+  "keywords_reversed": [
+    "일시적 좌절",
+    "과도한 낙관",
+    "지연된 성공"
+  ]
+}

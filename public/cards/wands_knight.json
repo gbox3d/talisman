@@ -1,0 +1,24 @@
+{
+  "id": "wands_knight",
+  "name_en": "Knight of Wands",
+  "image": "cards/wands_knight.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_12.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - Wands 12.jpeg",
+  "arcana": "minor",
+  "suit": "wands",
+  "number": 12,
+  "name_ko": "완드 나이트",
+  "keywords_upright": [
+    "모험",
+    "추진력",
+    "열정"
+  ],
+  "keywords_reversed": [
+    "충동",
+    "무모함",
+    "좌절"
+  ]
+}

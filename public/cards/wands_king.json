@@ -1,0 +1,24 @@
+{
+  "id": "wands_king",
+  "name_en": "King of Wands",
+  "image": "cards/wands_king.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_Wands_14.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - Wands 14.jpeg",
+  "arcana": "minor",
+  "suit": "wands",
+  "number": 14,
+  "name_ko": "완드 킹",
+  "keywords_upright": [
+    "비전",
+    "리더십",
+    "카리스마"
+  ],
+  "keywords_reversed": [
+    "독재",
+    "충동적 결정",
+    "무모함"
+  ]
+}

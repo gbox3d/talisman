@@ -1,0 +1,25 @@
+{
+  "id": "major_09_hermit",
+  "name_en": "Hermit",
+  "image": "cards/major_09_hermit.jpeg",
+  "source_url": "https://commons.wikimedia.org/wiki/File:RWS1909_-_09_Hermit.jpeg",
+  "license": "Public domain",
+  "usage_terms": "Public domain",
+  "artist_html": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Pamela_Colman_Smith\" class=\"extiw\" title=\"w:en:Pamela Colman Smith\"><span title=\"British occultist, artist and illustrator (1878–1951)\">Pamela Colman Smith</span></a></bdi>",
+  "original_filename": "RWS1909 - 09 Hermit.jpeg",
+  "arcana": "major",
+  "suit": null,
+  "number": 9,
+  "name_ko": "은둔자",
+  "keywords_upright": [
+    "내면 탐색",
+    "고독",
+    "지혜",
+    "성찰"
+  ],
+  "keywords_reversed": [
+    "고립",
+    "외로움",
+    "길 잃음"
+  ]
+}
