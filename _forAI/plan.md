@@ -9,7 +9,8 @@
 
 ## Current goal
 
-- **REST 엔드포인트 + GitHub Pages 자동 배포 워크플로 완성** ✅ (2026-05-25). 다음 단계는 **Gemini API 통합 설계** (가장 무거움) / **데이터 보강(짧은 의미 문장)** / **UX 보강** 중 선택.
+- **GitHub Pages 라이브 배포 완료** ✅ (2026-05-25). 라이브 URL: https://gbox3d.github.io/talisman/
+- 다음 회차 선택지: **데이터 보강(짧은 의미 문장)** → **Gemini API 통합 설계** → **UX 보강**. 데이터 보강이 Gemini 없이도 가치 있고 baseline이 되므로 추천.
 
 ## Near-term work
 

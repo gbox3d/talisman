@@ -78,4 +78,15 @@
 - `git init` 후 브랜치 `main`으로 변경.
 - `.gitignore`: Python 캐시 / venv / 에디터 설정 / OS 파일 / `public/cards/_raw/` 제외 (재현 가능, 약 23MB).
 - `.github/workflows/pages.yml`: `public/` 디렉터리를 GitHub Pages artifact로 업로드 후 배포 (`actions/upload-pages-artifact@v3` + `actions/deploy-pages@v4`). main push 또는 `workflow_dispatch`로 트리거.
-- 사용자 후속 작업: 저장소 push 후 GitHub Settings → Pages → Source = "GitHub Actions" 선택 시 자동 배포.
+
+### GitHub Pages 라이브 배포 완료
+
+- 사용자 push 후 첫 워크플로는 Pages 미활성화로 실패 (`HttpError: Not Found ... Get Pages site failed`).
+- `gh` CLI로 자동화: `gh api -X POST /repos/gbox3d/talisman/pages -f build_type=workflow`로 Pages 활성화 → `gh run rerun`으로 워크플로 재실행 → `gh run watch`로 완료 대기. 모든 단계 success.
+- **라이브 URL**: https://gbox3d.github.io/talisman/
+- 라이브 endpoint 전수 curl 확인: `/cards/ids.json`(78 IDs), `/cards/major_00_fool.json`(바보 + 정/역 키워드), 무작위 2-step draw 시뮬레이션, `/cards/{id}.jpeg`(HTTP/2 200, image/jpeg), `/spreads.json`(3종 스프레드) 모두 정상.
+- 환경 메모: gh 2.92. 워크플로에 Node.js 20 deprecation 경고 (2026-09-16까지 동작 보장, 그 전까지 `actions/checkout` 등 메이저 버전 갱신 권장).
+
+---
+
+**오늘 마무리 (2026-05-25).** 다음 회차 시작 시 `plan.md`의 "다음 단계" 항목에서 선택. 추천: 데이터 보강(짧은 의미 문장) → Gemini 통합 → UX. 데이터 보강은 Gemini 없이도 가치 있고 baseline이 됨.
