@@ -5,6 +5,7 @@
 - [Repository](#repository)
 - [Top-level structure](#top-level-structure)
 - [REST endpoints](#rest-endpoints)
+- [Live draw API (Deno Deploy)](#live-draw-api-deno-deploy)
 - [Entrypoints and key modules](#entrypoints-and-key-modules)
 - [Build and validation commands](#build-and-validation-commands)
 - [Tests](#tests)
@@ -35,6 +36,10 @@
   - `public/cards/{id}.json` — 카드별 메타 (×80)
   - `public/cards/{id}.jpeg` — 카드 이미지 (×80)
   - `public/cards/_raw/` — Wikimedia 원본 (git 제외, 재현 가능)
+- `deno/` — **라이브 랜덤 뽑기 엣지 API** (Deno Deploy). 정적이 못 하는 "한 방에 뽑기"만 담당.
+  - `main.ts` — `Deno.serve` 엔트리포인트 (라우팅 + CORS)
+  - `deck.ts` — 뽑기 로직 (`public/tarot.js`의 `draw()` 포팅, `../public/cards/cards.json`·`../public/spreads.json` 정적 import)
+  - `deno.json` — `dev`/`start`/`check` 태스크
 - `scripts/` — Python 데이터 도구
   - `fetch_cards.py` — Wikimedia에서 카드 수집 (`imageinfo`로 url+license)
   - `card_meanings.py` — 78장 한글명 + 정/역 키워드 마스터 데이터
@@ -55,6 +60,26 @@
 | `GET {BASE}/spreads.json` | JSON | 스프레드 정의 |
 
 호출자 흐름(어느 언어든 동일): `ids.json` → random index → `{id}.json`.
+
+이건 **① 서버 없이 (정적 2-step)** 경로다. 서버에서 무작위를 못 만들기 때문에 뽑기는 호출자 책임.
+
+## Live draw API (Deno Deploy)
+
+**② 한 방에 뽑기** 경로. 정적이 못 하는 무작위 뽑기만 서버리스 엣지(`deno/`)가 담당. 카드 데이터/이미지는 그대로 정적 호스팅에 있고, 엣지는 `cards.json`/`spreads.json`을 정적 import해서 뽑기만 한다.
+
+`{API}` = 배포된 엣지 URL (예: `https://<app>.deno.dev`). GitHub Pages 경로로는 못 씀(Pages는 정적 전용).
+
+| 경로 | 응답 | 용도 |
+|---|---|---|
+| `GET {API}/api/{n}` | JSON | 카드 n장 비복원 뽑기 (n: 1..78). `?reversed=false` → 전부 정방향 |
+| `GET {API}/api/spread/{id}` | JSON | 스프레드로 뽑기 (`single`/`three_card`/`situation_action_outcome`) |
+| `GET {API}/` 또는 `/api` | JSON | 사용법 |
+
+- 응답: `{ count, spread, cards: [...] }`. 각 카드 = 정적 카드 메타 + `orientation` + `keywords`(orientation 반영) + `image_url`(절대) + `position`. 스프레드는 `position_key`/`position_name_ko` 추가.
+- 모든 응답 CORS `*` + `application/json`. `OPTIONS` preflight 204.
+- 이미지 호스트: env `IMAGE_BASE` (기본 `https://gbox3d.github.io/talisman/`).
+- **배포(새 Deno Deploy)**: 대시보드 → repo `gbox3d/talisman` 연결 → 엔트리포인트 `deno/main.ts` → Automatic 모드(빌드 없음). Classic은 2026-07-20 종료.
+- **로컬**: `cd deno && deno task dev` → `http://localhost:8000/api/3`. 타입 체크 `deno check deno/main.ts`.
 
 ## Entrypoints and key modules
 
@@ -84,6 +109,13 @@ python3 scripts/verify_cards.py    # 78+2장, 필드, 파일 검증
 JS 문법 체크:
 ```
 node --check public/tarot.js
+```
+
+엣지 API (deno):
+```
+cd deno && deno check main.ts     # 타입 체크
+cd deno && deno task dev          # localhost:8000, --watch
+# deno는 ~/.deno/bin (user-local). PATH에 없으면: export PATH="$HOME/.deno/bin:$PATH"
 ```
 
 ## Tests

@@ -4,10 +4,14 @@ Rider-Waite 타로 덱의 78장 + 표지 2장을 **언어 무관한 JSON REST �
 백엔드 서버 없이 GitHub Pages / nginx 같은 정적 호스팅만으로 동작하며,
 curl, Python, 앱 인벤터, JavaScript 등 어느 환경에서든 동일한 HTTP GET 인터페이스로 호출합니다.
 
-> 무작위 카드 뽑기는 **호출자 측 책임**입니다 (정적 호스팅의 본질). 서버가 무작위를 못 만들기 때문에, ID 목록을 받아 호출자가 random index를 고른 뒤 카드 메타를 GET 하는 2-step 패턴을 사용합니다 — 어느 시스템에서든 동일하게 적용됩니다.
+**두 가지 사용 경로가 있습니다.**
+
+- **① 서버 없이 (정적 2-step)** — 정적 호스팅은 서버에서 무작위를 못 만들므로, ID 목록을 받아 **호출자가** random index를 고른 뒤 카드 메타를 GET 합니다. GitHub Pages만으로 동작하며 어느 시스템에서든 동일합니다.
+- **② 한 방에 뽑기 (라이브 API)** — 서버리스 엣지(`GET /api/{n}`)가 겹치지 않게 뽑아 이미지 + 타로 정보를 **한 번의 GET으로** 돌려줍니다. 앱 인벤터·curl·fetch 누구나 동일하게 호출. → [라이브 랜덤 뽑기 API](#라이브-랜덤-뽑기-api-apin)
 
 ## 목차
 
+- [라이브 랜덤 뽑기 API (`/api/{n}`)](#라이브-랜덤-뽑기-api-apin)
 - [엔드포인트](#엔드포인트)
 - [응답 형식](#응답-형식)
 - [사용법 — 어느 환경에서나 동일한 GET](#사용법--어느-환경에서나-동일한-get)
@@ -21,7 +25,77 @@ curl, Python, 앱 인벤터, JavaScript 등 어느 환경에서든 동일한 HTT
 - [데이터 재생성](#데이터-재생성)
 - [출처 · 라이센스](#출처--라이센스)
 
+## 라이브 랜덤 뽑기 API (`/api/{n}`)
+
+겹치지 않게 카드를 뽑아 **이미지 + 타로 정보를 한 번의 GET으로** 돌려주는 서버리스 엣지 API입니다.
+정적 호스팅은 서버에서 무작위를 만들 수 없어서, 이 뽑기 부분만 [Deno Deploy](https://deno.com/deploy) 엣지 함수([`deno/`](deno/))가 담당합니다. 카드 데이터와 이미지는 그대로 정적 호스팅에 있고, 엣지는 뽑기만 합니다.
+
+`{API}` = 배포된 엣지 URL. 예) `https://<app>.deno.dev`.
+
+| 메서드 / 경로 | 응답 | 설명 |
+|---|---|---|
+| `GET {API}/api/{n}` | JSON | 카드 `n`장 비복원 뽑기 (n: 1~78). `?reversed=false` 면 전부 정방향. |
+| `GET {API}/api/spread/{id}` | JSON | 스프레드로 뽑기. id: `single` / `three_card` / `situation_action_outcome`. |
+| `GET {API}/` | JSON | 사용법(엔드포인트 목록). |
+
+CORS가 `*`로 열려 있어 앱 인벤터 / 브라우저 fetch에서 바로 호출됩니다.
+
+### 응답 (`GET {API}/api/3`)
+
+```json
+{
+  "count": 3,
+  "spread": null,
+  "cards": [
+    {
+      "id": "cups_03",
+      "name_ko": "컵 3",
+      "arcana": "minor", "suit": "cups", "number": 3,
+      "orientation": "upright",
+      "keywords": ["우정", "축하", "공동체"],
+      "image_url": "https://gbox3d.github.io/talisman/cards/cups_03.jpeg",
+      "license": "Public domain",
+      "position": 0
+    }
+  ]
+}
+```
+
+`name_en`, `keywords_upright` / `keywords_reversed`, `source_url`, `image`(상대경로)도 함께 포함됩니다. `keywords`는 그 카드의 `orientation`(정/역)에 맞춰 고른 배열이고, `image_url`은 완성된 절대 URL이라 그대로 `<img src>`에 쓸 수 있습니다. `/api/spread/{id}` 응답에는 `spread` 메타와 각 카드의 `position_key` / `position_name_ko`가 추가됩니다.
+
+### 호출 예
+
+```bash
+# 무작위 3장 — 한 번의 GET (2-step 불필요)
+curl -s https://<app>.deno.dev/api/3
+
+# 과거-현재-미래 스프레드
+curl -s https://<app>.deno.dev/api/spread/three_card
+```
+
+```js
+const draw = await fetch('https://<app>.deno.dev/api/3').then(r => r.json());
+draw.cards.forEach(c => console.log(c.name_ko, c.orientation, c.image_url));
+```
+
+**앱 인벤터**: `Web1.Url = "{API}/api/3"` → `Web1.Get` → `GotText` 콜백에서 JSON 파싱. 정적 경로의 2-step 없이 `Web.Get` **한 번**으로 카드 리스트를 받습니다.
+
+### 배포 (Deno Deploy)
+
+엔트리포인트는 [`deno/main.ts`](deno/main.ts). 빌드 단계 없음.
+
+1. 이 저장소를 GitHub에 push.
+2. [Deno Deploy](https://deno.com/deploy) 대시보드 → 앱 생성 → GitHub `gbox3d/talisman` 연결 → 엔트리포인트 `deno/main.ts` → Automatic 모드.
+3. 발급된 `https://<app>.deno.dev/api/3` 호출.
+4. (선택) 환경변수 `IMAGE_BASE`로 이미지 호스트 변경. 기본값 `https://gbox3d.github.io/talisman/`.
+
+로컬 실행: `cd deno && deno task dev` → `http://localhost:8000/api/3`.
+
+> Deno Deploy **Classic은 2026-07-20 종료** 예정이므로 새 Deno Deploy 플랫폼을 사용하세요. 코드(`Deno.serve`)는 양쪽 호환입니다.
+
 ## 엔드포인트
+
+> 아래는 **① 서버 없이 (정적 2-step)** 경로입니다. 카드 데이터 원본이자, 위 라이브 API가 내부에서 사용하는 같은 데이터입니다.
 
 `{BASE}` = 정적 호스팅 루트. 예) `https://yourhost/taro` 또는 `https://username.github.io/talisman`.
 
@@ -191,6 +265,10 @@ public/                       # ← 정적 호스팅 루트 ({BASE})
     ├── {id}.json             # GET /cards/{id}.json (×80장)
     ├── {id}.jpeg             # GET /cards/{id}.jpeg (×80장)
     └── _raw/                 # Wikimedia 원본 보존 (배포 제외 가능)
+deno/                         # ← 라이브 랜덤 뽑기 엣지 API (Deno Deploy)
+├── main.ts                   # Deno.serve 엔트리포인트 (라우팅 + CORS)
+├── deck.ts                   # 뽑기 로직 (tarot.js draw() 포팅)
+└── deno.json                 # dev/start/check 태스크
 scripts/                      # Python 데이터 도구
 ├── fetch_cards.py            # Wikimedia에서 카드 수집
 ├── card_meanings.py          # 한글명 + 키워드 마스터 데이터

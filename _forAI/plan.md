@@ -10,7 +10,8 @@
 ## Current goal
 
 - **GitHub Pages 라이브 배포 완료** ✅ (2026-05-25). 라이브 URL: https://gbox3d.github.io/talisman/
-- 다음 회차 선택지: **데이터 보강(짧은 의미 문장)** → **Gemini API 통합 설계** → **UX 보강**. 데이터 보강이 Gemini 없이도 가치 있고 baseline이 되므로 추천.
+- **라이브 랜덤 뽑기 엣지 API(`/api/{n}`) 구현 완료** ✅ (2026-06-01). `deno/`에 Deno Deploy 엣지 함수. 로컬 검증 통과. **남은 건 사용자의 Deno Deploy 대시보드 연결 1회**(repo 연결 + 엔트리포인트 `deno/main.ts`).
+- 다음 회차 선택지: **Gemini API 통합** → **데이터 보강(짧은 의미 문장)** → **UX 보강**. 이제 엣지(Deno Deploy)가 있으니 Gemini 프록시를 **같은 엣지에 얹는 게 자연스럽다**(별도 백엔드 불필요). 뽑기 응답에 `interpretation` 필드를 더하는 형태.
 
 ## Near-term work
 
@@ -42,7 +43,7 @@
 
 ### 다음 단계 (제안 — 순서 미확정)
 
-- **A. Gemini API 통합 설계**: 정적 호스팅이므로 백엔드 프록시(예: Cloudflare Worker / Vercel Function / Cloud Run)가 필요. 호출 인터페이스(카드 ID + 스프레드 컨텍스트 → 해석 텍스트), 캐싱 키 전략(카드 조합 + 스프레드 ID), 비용/한도 보호.
+- **A. Gemini API 통합 설계**: 백엔드 프록시는 **이미 `deno/` 엣지로 확보됨** — 거기에 얹으면 된다(Cloudflare/Vercel 새로 안 띄워도 됨). 호출 인터페이스(카드 ID + 스프레드 컨텍스트 → 해석 텍스트), 캐싱 키 전략(카드 조합 + 스프레드 ID), 비용/한도 보호. Gemini 키는 Deno Deploy 환경변수로(클라이언트 노출 없음). 예: `GET /api/spread/three_card?interpret=1` → 뽑기 + 해석을 한 응답에.
 - **B. 데이터 보강**: 키워드 외에 정/역 짧은 설명(`meaning_upright`/`meaning_reversed` 문장) 추가 — Gemini 통합 전 baseline으로 활용 가능.
 - **C. UX 보강**: 카드 뒷면(`cover_full` 활용) + 뒤집기 애니메이션 + 모바일 레이아웃 점검.
 - **D. 추가 엔드포인트**(필요 시): `cards/by_arcana/major.json`, `cards/by_suit/wands.json` 같은 파생 뷰. yagni 우선.

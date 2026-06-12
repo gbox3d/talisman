@@ -3,6 +3,7 @@
 ## 목차
 
 - [2026-05-25](#2026-05-25)
+- [2026-06-01](#2026-06-01)
 
 ## 2026-05-25
 
@@ -90,3 +91,18 @@
 ---
 
 **오늘 마무리 (2026-05-25).** 다음 회차 시작 시 `plan.md`의 "다음 단계" 항목에서 선택. 추천: 데이터 보강(짧은 의미 문장) → Gemini 통합 → UX. 데이터 보강은 Gemini 없이도 가치 있고 baseline이 됨.
+
+## 2026-06-01
+
+### 라이브 랜덤 뽑기 엣지 API (`/api/{n}`) 추가 — Deno Deploy
+
+- **배경**: 사용자가 `gbox3d.github.io/talisman/api/3`처럼 **한 방에 뽑힌 JSON**(겹치지 않는 N장 + 이미지/타로 정보)을 원함. 핵심 제약을 명확히 함 — 정적 호스팅 + 브라우저 JS는 **브라우저(받는 쪽)에서만** 돌아서, 앱인벤터·curl·서버 fetch(JS 미실행)는 정적 페이지에서 뽑힌 JSON을 못 받는다. 따라서 "모든 클라이언트"를 원하면 서버(서버리스)가 필수.
+- **결정(사용자 확정)**: 모든 클라이언트 지원 → 서버리스 엣지 도입. 호스팅 = **Deno Deploy**(GitHub repo 연동 자동 배포, CLI 불필요). 정적 2-step 패턴과 `tarot.js`는 그대로 유지(서버 0 경로 보존), 엣지는 추가 surface.
+- **제약 메모**: Deno Deploy **Classic은 2026-07-20 종료** → 새 Deno Deploy 플랫폼 사용. 코드(`Deno.serve`)는 양쪽 호환.
+- **신규 `deno/`**:
+  - `deck.ts` — `public/tarot.js`의 `draw()` 포팅(Fisher-Yates 비복원 + 정/역 50% + orientation별 keywords). `IMAGE_BASE`(env, 기본 `https://gbox3d.github.io/talisman/`)로 절대 `image_url` 생성. 카드/스프레드 데이터는 `../public/cards/cards.json`·`../public/spreads.json`을 **정적 JSON import**(런타임 네트워크 의존 0, Deno Deploy 자동 모드가 모듈 그래프째 배포).
+  - `main.ts` — `Deno.serve` 엔트리포인트. 라우트: `GET /api/{n}`(쿼리 `?reversed=false`), `GET /api/spread/{id}`, `GET /`(usage), `OPTIONS`(204). 모든 응답 CORS `*` + `application/json`.
+  - `deno.json` — `dev`/`start`/`check` 태스크.
+- **검증(로컬)**: `deno 2.8.1` user-local 설치(`~/.deno`). `deno check main.ts` 통과. `deno task dev`(localhost:8000)로 curl 전수 확인 — `/api/3` 비복원(unique=3), `?reversed=false` 전부 upright, keywords가 orientation과 일치(여러 회차), `image_url`이 실제 GitHub Pages에서 **HTTP 200 image/jpeg**, `/api/spread/three_card` 포지션 매칭, `/api/spread/nope` 404, `/api/999` 400, `/` usage JSON, OPTIONS·GET 모두 CORS 헤더.
+- **문서**: `readme.md`에 "라이브 랜덤 뽑기 API" 섹션 + 배포 절차 추가, 디렉터리 구조에 `deno/` 추가, 인트로 blockquote를 ①서버없이(정적 2-step)/②한방에(라이브 API) 두 경로로 정리.
+- **미완(사용자 작업)**: Deno Deploy 대시보드에서 repo 연결 + 엔트리포인트 `deno/main.ts` 지정(사용자 로그인 필요). 발급 URL은 `*.deno.dev` — GitHub Pages 경로(`gbox3d.github.io/...`)로는 못 씀(Pages는 정적 전용).
