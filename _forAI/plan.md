@@ -10,7 +10,7 @@
 ## Current goal
 
 - **GitHub Pages 라이브 배포 완료** ✅ (2026-05-25). 라이브 URL: https://gbox3d.github.io/talisman/
-- **라이브 랜덤 뽑기 엣지 API(`/api/{n}`) 구현 완료** ✅ (2026-06-01). `deno/`에 Deno Deploy 엣지 함수. 로컬 검증 통과. **남은 건 사용자의 Deno Deploy 대시보드 연결 1회**(repo 연결 + 엔트리포인트 `deno/main.ts`).
+- **라이브 랜덤 뽑기 엣지 API(`/api/{n}`) 배포 완료** ✅ (2026-06-14). **라이브: https://talisman.gbox3d.deno.net** (org `gbox3d`/app `talisman`, region global). CLI(`deno deploy`)로 최소 스테이징 배포 — GitHub 연동 모노레포 미지원 + 정적 자동감지 회피. 재배포는 [`scripts/deploy_edge.sh`](../scripts/deploy_edge.sh) (`--prod` 필수). 라이브 전수 검증 통과. 구 Classic(`*.deno.dev`)은 2026-07-20 종료, 새 플랫폼은 `*.deno.net`.
 - 다음 회차 선택지: **Gemini API 통합** → **데이터 보강(짧은 의미 문장)** → **UX 보강**. 이제 엣지(Deno Deploy)가 있으니 Gemini 프록시를 **같은 엣지에 얹는 게 자연스럽다**(별도 백엔드 불필요). 뽑기 응답에 `interpretation` 필드를 더하는 형태.
 
 ## Near-term work
