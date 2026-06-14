@@ -4,6 +4,7 @@
 
 - [2026-05-25](#2026-05-25)
 - [2026-06-01](#2026-06-01)
+- [2026-06-14](#2026-06-14)
 
 ## 2026-05-25
 
@@ -106,3 +107,31 @@
 - **검증(로컬)**: `deno 2.8.1` user-local 설치(`~/.deno`). `deno check main.ts` 통과. `deno task dev`(localhost:8000)로 curl 전수 확인 — `/api/3` 비복원(unique=3), `?reversed=false` 전부 upright, keywords가 orientation과 일치(여러 회차), `image_url`이 실제 GitHub Pages에서 **HTTP 200 image/jpeg**, `/api/spread/three_card` 포지션 매칭, `/api/spread/nope` 404, `/api/999` 400, `/` usage JSON, OPTIONS·GET 모두 CORS 헤더.
 - **문서**: `readme.md`에 "라이브 랜덤 뽑기 API" 섹션 + 배포 절차 추가, 디렉터리 구조에 `deno/` 추가, 인트로 blockquote를 ①서버없이(정적 2-step)/②한방에(라이브 API) 두 경로로 정리.
 - **미완(사용자 작업)**: Deno Deploy 대시보드에서 repo 연결 + 엔트리포인트 `deno/main.ts` 지정(사용자 로그인 필요). 발급 URL은 `*.deno.dev` — GitHub Pages 경로(`gbox3d.github.io/...`)로는 못 씀(Pages는 정적 전용).
+
+## 2026-06-14
+
+### Deno Deploy 배포 경로 재검토 — 플랫폼 마이그레이션 반영, GitHub 연동 → CLI 배포로 권장 변경
+
+- **배경**: 사용자가 GitHub Pages는 마쳤고(`gbox3d.github.io/talisman/` 라이브), 이제 `deno/` 엣지 API를 어떻게 띄우는지 + "별도 과정 없이 자동으로 되냐"를 물음. 답: **아니오 — Pages는 push 자동 배포지만 엣지는 Deno Deploy에 별도 1회 배포 필요**(Deno 로그인 필요, 내가 대신 못 함).
+- **공식 문서로 2026-06 현황 확인**:
+  - 새 플랫폼 = [console.deno.com](https://console.deno.com). 구 **Deploy Classic(`dash.deno.com`)은 2026-07-20 종료** → 새 플랫폼 강제. `deployctl`도 sunset → `deno deploy` 서브커맨드 사용.
+  - `Deno.serve` 완전 지원(우리 코드 OK). 구 std `serve()`는 미지원(우리는 안 씀).
+  - **GitHub 연동은 "앱이 서브디렉터리에 있는 모노레포 미지원"** — talisman은 `deno/main.ts`가 `../public/*.json`을 import하는 구조라 정확히 이 케이스에 걸림. → readme의 옛 "대시보드 GitHub 연결 + Automatic 모드" 안내는 이제 위험/부정확.
+- **결정**: 권장 배포 경로를 **CLI(`deno deploy create`, 저장소 루트에서 실행)** 로 변경. 루트째 올리므로 서브디렉터리 모노레포 제약을 우회. 이미지(약 45MB)는 엣지가 안 쓰므로 `--ignore 'public/cards/*.jpeg'` 선택지 안내.
+- **로컬 검증**: `deno 2.8.1`, `deno deploy`(v0.0.99) 서브커맨드 존재 확인, `deno check main.ts` 통과, 서버 띄워 `GET /api/3`(unique 3장)·`/api/spread/three_card`(과거/현재/미래 포지션 매칭) 정상 응답 재확인.
+- **문서**: `readme.md` 배포 섹션을 console.deno.com + CLI 우선 + 모노레포 제약 경고 + Classic 종료일로 재작성. `plan.md` Current goal의 "대시보드 연결 1회" → "CLI 배포 1회"로 정정.
+- **남은 건 여전히 사용자 작업**: Deno 계정 로그인 + `deno deploy create` 실행(엔트리포인트 `deno/main.ts`). 그 전에 console.deno.com에서 org 1회 생성.
+
+### Deno Deploy 라이브 배포 완료 — https://talisman.gbox3d.deno.net
+
+- 사용자가 console.deno.com 로그인 + org 생성 + **24h access token(`ddp_`)** 발급해 전달. CLI 배포는 내가 사용자 머신에서 실행.
+- **배포 과정에서 발견한 함정 3가지**(readme/스크립트에 반영):
+  1. `deno deploy create`는 `--region`(us/eu/global) **필수**. → `global` 사용.
+  2. 빌드 자동감지가 `public/`을 보고 **runtime=static**으로 잡아버림. `--do-not-use-detected-build-config`로 꺼야 `--runtime-mode dynamic --entrypoint deno/main.ts`가 먹음.
+  3. `--source local`은 디렉터리를 통째로 올림 → `.git`(24M)+카드 이미지(23M)+`_raw`(23M)가 딸려갈 위험. **최소 스테이징**(코드 + cards.json + spreads.json = 약 100KB, 5파일)을 임시 폴더에 만들어 거기서 배포. 이미지는 엣지가 안 쓰고 GitHub Pages에 그대로 있음(`image_url`이 그쪽을 가리킴).
+- **최초 생성 명령**: `deno deploy create --org gbox3d --app talisman --source local --runtime-mode dynamic --entrypoint deno/main.ts --do-not-use-detected-build-config --region global`. 5파일 업로드 → build/warm/route → 성공.
+- **결과 URL**: Production `https://talisman.gbox3d.deno.net` (새 플랫폼은 `.deno.net`, `.deno.dev` 아님). console: https://console.deno.com/gbox3d/talisman.
+- **라이브 전수 검증**: `/`(usage), `/api/3`(비복원·unique 3장), `/api/spread/three_card`(과거/현재/미래 매칭), CORS `*`, `?reversed=false` 전부 upright, `image_url`이 GitHub Pages에서 **HTTP 200 image/jpeg 273KB**, 에러 케이스 `/api/999`→400·`/api/spread/nope`→404·OPTIONS→204. 모두 정상.
+- **재배포 워크플로**: 기존 앱은 `deno deploy --org gbox3d --app talisman` (저장된 빌드 설정 재사용). 단 **`--prod` 없으면 프리뷰로만** 나감(확인함). 재현용 [`scripts/deploy_edge.sh`](../scripts/deploy_edge.sh) 추가 — 최소 스테이징 + `--prod`. 첫 재배포 시도에서 Deno 측 "unexpected internal error"가 한 번 났으나 **일시적**(재시도 성공), 프로덕션엔 무영향(실패 빌드는 승격 안 됨).
+- **토큰**: 24h 제한이라 자동 만료. console.deno.com/account/access-tokens 에서 즉시 revoke도 가능.
+- **남은 선택지**: (1) `public/index.html` 데모가 라이브 `/api/*`를 쓰도록 연결, (2) Gemini 해석(`?interpret=1`)을 같은 엣지에 얹기, (3) org verify(한도 100배, 현재 불필요).

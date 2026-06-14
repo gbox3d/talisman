@@ -30,7 +30,7 @@ curl, Python, 앱 인벤터, JavaScript 등 어느 환경에서든 동일한 HTT
 겹치지 않게 카드를 뽑아 **이미지 + 타로 정보를 한 번의 GET으로** 돌려주는 서버리스 엣지 API입니다.
 정적 호스팅은 서버에서 무작위를 만들 수 없어서, 이 뽑기 부분만 [Deno Deploy](https://deno.com/deploy) 엣지 함수([`deno/`](deno/))가 담당합니다. 카드 데이터와 이미지는 그대로 정적 호스팅에 있고, 엣지는 뽑기만 합니다.
 
-`{API}` = 배포된 엣지 URL. 예) `https://<app>.deno.dev`.
+`{API}` = 배포된 엣지 URL. **현재 라이브: `https://talisman.gbox3d.deno.net`** (새 플랫폼은 `.deno.dev`가 아니라 `.deno.net` 도메인을 씁니다).
 
 | 메서드 / 경로 | 응답 | 설명 |
 |---|---|---|
@@ -67,14 +67,14 @@ CORS가 `*`로 열려 있어 앱 인벤터 / 브라우저 fetch에서 바로 호
 
 ```bash
 # 무작위 3장 — 한 번의 GET (2-step 불필요)
-curl -s https://<app>.deno.dev/api/3
+curl -s https://talisman.gbox3d.deno.net/api/3
 
 # 과거-현재-미래 스프레드
-curl -s https://<app>.deno.dev/api/spread/three_card
+curl -s https://talisman.gbox3d.deno.net/api/spread/three_card
 ```
 
 ```js
-const draw = await fetch('https://<app>.deno.dev/api/3').then(r => r.json());
+const draw = await fetch('https://talisman.gbox3d.deno.net/api/3').then(r => r.json());
 draw.cards.forEach(c => console.log(c.name_ko, c.orientation, c.image_url));
 ```
 
@@ -82,16 +82,37 @@ draw.cards.forEach(c => console.log(c.name_ko, c.orientation, c.image_url));
 
 ### 배포 (Deno Deploy)
 
-엔트리포인트는 [`deno/main.ts`](deno/main.ts). 빌드 단계 없음.
+**라이브: https://talisman.gbox3d.deno.net** (org `gbox3d` / app `talisman`, region `global`). 엔트리포인트 [`deno/main.ts`](deno/main.ts), 빌드 단계 없음, `Deno.serve` 기반.
 
-1. 이 저장소를 GitHub에 push.
-2. [Deno Deploy](https://deno.com/deploy) 대시보드 → 앱 생성 → GitHub `gbox3d/talisman` 연결 → 엔트리포인트 `deno/main.ts` → Automatic 모드.
-3. 발급된 `https://<app>.deno.dev/api/3` 호출.
-4. (선택) 환경변수 `IMAGE_BASE`로 이미지 호스트 변경. 기본값 `https://gbox3d.github.io/talisman/`.
+> **GitHub Pages와 달리 자동 배포가 아닙니다.** Pages는 push만으로 워크플로가 배포하지만, 이 `/api/{n}` 엣지는 Deno Deploy에 **별도로 배포**해야 합니다(Deno 계정 인증 필요).
+>
+> 새 플랫폼은 [console.deno.com](https://console.deno.com), 도메인은 `*.deno.net`. 구 **Deploy Classic(`dash.deno.com` / `*.deno.dev`)은 2026-07-20 종료**.
+
+**CLI로 배포한다.** 새 플랫폼의 GitHub 연동은 아직 **앱이 서브디렉터리(`deno/`)에 있는 모노레포를 지원하지 않고**(이 저장소는 `deno/main.ts`가 `../public/*.json`을 import), 정적 사이트 자동감지가 `public/`을 static으로 잡아버린다. CLI로 올리면 둘 다 우회한다.
+
+재배포는 스크립트 한 줄:
+
+```bash
+export DENO_DEPLOY_TOKEN=ddp_...   # console.deno.com/account/access-tokens 에서 발급
+bash scripts/deploy_edge.sh        # 코드+cards.json+spreads.json만(≈100KB) 스테이징해 --prod 배포
+```
+
+[`scripts/deploy_edge.sh`](scripts/deploy_edge.sh)는 `.git`/카드 이미지(23MB)/`_raw`(23MB)를 빼고 엣지가 실제로 쓰는 파일만 임시 폴더에 모아 `deno deploy --prod --org gbox3d --app talisman`을 실행한다. 토큰을 안 주면 `deno deploy`가 브라우저 로그인으로 인증한다.
+
+**최초 앱 생성**(이미 완료, 기록용) — 빌드 자동감지를 끄고 dynamic을 강제해야 한다:
+
+```bash
+deno deploy create --org gbox3d --app talisman \
+  --source local --runtime-mode dynamic --entrypoint deno/main.ts \
+  --do-not-use-detected-build-config --region global
+```
+
+메모:
+- `deno deploy`(=`create` 아님)는 서버에 저장된 빌드 설정을 재사용하므로 `--org/--app/--prod`만 있으면 된다. `--prod` 없으면 **프리뷰**로만 나간다.
+- 이미지 호스트 변경: `deno deploy env add IMAGE_BASE "https://..."` (기본값 `https://gbox3d.github.io/talisman/`).
+- org 인증/한도 100배가 필요할 때만 console에서 "Verify Organization". 이 API엔 불필요.
 
 로컬 실행: `cd deno && deno task dev` → `http://localhost:8000/api/3`.
-
-> Deno Deploy **Classic은 2026-07-20 종료** 예정이므로 새 Deno Deploy 플랫폼을 사용하세요. 코드(`Deno.serve`)는 양쪽 호환입니다.
 
 ## 엔드포인트
 
@@ -269,12 +290,13 @@ deno/                         # ← 라이브 랜덤 뽑기 엣지 API (Deno Dep
 ├── main.ts                   # Deno.serve 엔트리포인트 (라우팅 + CORS)
 ├── deck.ts                   # 뽑기 로직 (tarot.js draw() 포팅)
 └── deno.json                 # dev/start/check 태스크
-scripts/                      # Python 데이터 도구
+scripts/                      # 도구 모음
 ├── fetch_cards.py            # Wikimedia에서 카드 수집
 ├── card_meanings.py          # 한글명 + 키워드 마스터 데이터
 ├── enrich_cards.py           # cards.json에 의미 머지
 ├── split_cards.py            # cards.json → 카드별 JSON 분할 + ids.json
-└── verify_cards.py           # 완결성 검증
+├── verify_cards.py           # 완결성 검증
+└── deploy_edge.sh            # Deno Deploy 엣지 API 재배포 (--prod)
 ```
 
 ## 로컬 실행
