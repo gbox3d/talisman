@@ -28,7 +28,7 @@
 - `_forAI/` — AI 작업 문맥 문서
 - `public/` — **사이트 루트** (= `{BASE}`). GitHub Pages가 이 폴더를 그대로 publish.
   - `public/index.html` — 카드 뽑기 데모 UI
-  - `public/example.html` — 사용 예제 페이지
+  - `public/example.html` — 사용 예제 페이지 (맨 위 라이브 API `/api/{n}` 인터랙티브 섹션 + 정적 2-step 예제)
   - `public/tarot.js` — JS 편의 라이브러리(ESM, 부수 도구)
   - `public/spreads.json` — 스프레드 정의
   - `public/cards/cards.json` — 78장 + 표지 2장 전체 메타
@@ -40,12 +40,13 @@
   - `main.ts` — `Deno.serve` 엔트리포인트 (라우팅 + CORS)
   - `deck.ts` — 뽑기 로직 (`public/tarot.js`의 `draw()` 포팅, `../public/cards/cards.json`·`../public/spreads.json` 정적 import)
   - `deno.json` — `dev`/`start`/`check` 태스크
-- `scripts/` — Python 데이터 도구
+- `scripts/` — 도구 모음
   - `fetch_cards.py` — Wikimedia에서 카드 수집 (`imageinfo`로 url+license)
   - `card_meanings.py` — 78장 한글명 + 정/역 키워드 마스터 데이터
   - `enrich_cards.py` — `cards.json`에 의미 데이터 머지
   - `split_cards.py` — `cards.json` → 카드별 JSON + `ids.json`
   - `verify_cards.py` — 메타/파일 완결성 검증
+  - `deploy_edge.sh` — Deno Deploy 엣지 API 재배포 (최소 스테이징 + `deno deploy --prod`)
 
 ## REST endpoints
 
@@ -67,7 +68,7 @@
 
 **② 한 방에 뽑기** 경로. 정적이 못 하는 무작위 뽑기만 서버리스 엣지(`deno/`)가 담당. 카드 데이터/이미지는 그대로 정적 호스팅에 있고, 엣지는 `cards.json`/`spreads.json`을 정적 import해서 뽑기만 한다.
 
-`{API}` = 배포된 엣지 URL (예: `https://<app>.deno.dev`). GitHub Pages 경로로는 못 씀(Pages는 정적 전용).
+`{API}` = 배포된 엣지 URL. **현재 라이브: `https://talisman.gbox3d.deno.net`** (새 플랫폼은 `.deno.dev`가 아니라 `.deno.net`). GitHub Pages 경로로는 못 씀(Pages는 정적 전용).
 
 | 경로 | 응답 | 용도 |
 |---|---|---|
@@ -78,7 +79,7 @@
 - 응답: `{ count, spread, cards: [...] }`. 각 카드 = 정적 카드 메타 + `orientation` + `keywords`(orientation 반영) + `image_url`(절대) + `position`. 스프레드는 `position_key`/`position_name_ko` 추가.
 - 모든 응답 CORS `*` + `application/json`. `OPTIONS` preflight 204.
 - 이미지 호스트: env `IMAGE_BASE` (기본 `https://gbox3d.github.io/talisman/`).
-- **배포(새 Deno Deploy)**: 대시보드 → repo `gbox3d/talisman` 연결 → 엔트리포인트 `deno/main.ts` → Automatic 모드(빌드 없음). Classic은 2026-07-20 종료.
+- **배포(새 Deno Deploy, console.deno.com)**: CLI로 배포. GitHub 연동은 서브디렉터리(`deno/`) 모노레포 미지원 + `public/` 정적 자동감지 때문에 막혀서, `scripts/deploy_edge.sh`로 최소 스테이징 후 `deno deploy --prod --org gbox3d --app talisman`. 최초 생성은 `--source local --runtime-mode dynamic --entrypoint deno/main.ts --do-not-use-detected-build-config --region global`. 구 Classic(`*.deno.dev`)은 2026-07-20 종료.
 - **로컬**: `cd deno && deno task dev` → `http://localhost:8000/api/3`. 타입 체크 `deno check deno/main.ts`.
 
 ## Entrypoints and key modules

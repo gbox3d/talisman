@@ -135,3 +135,14 @@
 - **재배포 워크플로**: 기존 앱은 `deno deploy --org gbox3d --app talisman` (저장된 빌드 설정 재사용). 단 **`--prod` 없으면 프리뷰로만** 나감(확인함). 재현용 [`scripts/deploy_edge.sh`](../scripts/deploy_edge.sh) 추가 — 최소 스테이징 + `--prod`. 첫 재배포 시도에서 Deno 측 "unexpected internal error"가 한 번 났으나 **일시적**(재시도 성공), 프로덕션엔 무영향(실패 빌드는 승격 안 됨).
 - **토큰**: 24h 제한이라 자동 만료. console.deno.com/account/access-tokens 에서 즉시 revoke도 가능.
 - **남은 선택지**: (1) `public/index.html` 데모가 라이브 `/api/*`를 쓰도록 연결, (2) Gemini 해석(`?interpret=1`)을 같은 엣지에 얹기, (3) org verify(한도 100배, 현재 불필요).
+
+### 마무리 — PR 머지 + 예제 페이지 + _forAI 문서 정리
+
+- **예제 페이지**: `public/example.html` 맨 위에 "라이브 API — 한 번의 GET으로 뽑기" 섹션 추가(실행 버튼 + 요청/응답 설명). lede를 ①라이브/②정적 두 경로로 정리.
+- **PR #1**(`feat/live-api-example` → main) 머지 완료(`b9bd514`). main 직접 푸시가 안전 가드에 막혀 브랜치+PR로 우회 → 교수님이 GitHub에서 머지. Pages 재배포 success(17s), https://gbox3d.github.io/talisman/example.html 라이브 확인.
+- **사용자 선호 기록**: 개인 저장소는 PR 없이 **main 직접 푸시**(명시 요청 시에만 PR). 실제 적용엔 settings.json push 허용 규칙 필요(아직 미설정).
+- **_forAI 문서 정리**: staleness 감사(문서 5종 병렬 워크플로) 후 — `README.md`(현재 스냅샷: "초기/이미지 수집" → 라이브), `inventory.md`(deploy_edge.sh 추가/배포방법 CLI/도메인 `.deno.net`/example.html), `memo.md`(런타임 구조 구체화·빌드환경·동작규칙) 갱신. `plan.md`·루트 `readme.md`는 감사 결과 이미 정확.
+
+---
+
+**오늘 마무리 (2026-06-14 21:40 KST).** 라이브 엣지 API 배포 + 호출 예제 페이지 + 문서 정리까지 완료. 다음 회차 추천: Gemini 해석(`?interpret=1`)을 `deno/` 엣지에 얹기 (`plan.md` A).

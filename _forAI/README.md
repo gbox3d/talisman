@@ -33,9 +33,9 @@
 - 프로젝트 성격: 웹 기반 타로 카드 애플리케이션
 - 카드 덱: Rider-Waite (Roses & Lilies edition, Wikimedia Commons 라이센스 공개)
   - 출처: https://commons.wikimedia.org/wiki/Category:Rider-Waite_tarot_deck_(Roses_%26_Lilies)
-- 해석 엔진: Google Gemini 무료 API (예정)
-- 현재 단계: 초기 — 빈 디렉터리, 루트에 `readme.md` 한 개
-- 현재 작업 단위: **카드 이미지 수집**
+- 현재 단계: **라이브** — ① 정적 경로(GitHub Pages, https://gbox3d.github.io/talisman/) + ② 라이브 뽑기 API(Deno Deploy 엣지, https://talisman.gbox3d.deno.net) 모두 가동 중.
+- 최근 완료(2026-06-14): 라이브 `/api/{n}` 엣지 배포 + `public/example.html` 호출 예제 섹션 + `scripts/deploy_edge.sh`. PR #1 main 머지.
+- 다음 단계 후보: Gemini 카드 해석을 같은 엣지에 통합(`?interpret=1`) · 정/역 의미 문장 보강 · UX. 구체 계획은 `plan.md`.
 
 ## 유지 규칙
 

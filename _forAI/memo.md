@@ -15,7 +15,7 @@
 - 프로젝트명: `talisman` (스페인어 "talismán" = 부적; ASCII 표기는 영어 talisman과 동일) — 웹 타로 카드 앱
 - 버전: 미정 (초기)
 - 타깃 플랫폼: 웹 브라우저
-- 빌드 환경: 미정 (프론트엔드 스택 결정 필요)
+- 빌드 환경: 빌드 없음 — 정적(HTML/CSS/JS) + Deno Deploy(Deno.serve)
 
 ## Rider-Waite 덱 메모
 
@@ -43,16 +43,18 @@
 
 ## 런타임 구조 메모
 
-- 미정. 단, 초기 구상은 다음과 같다:
-  1. 정적 자산: 카드 이미지 + 카드 메타데이터(JSON)
-  2. 프론트엔드: 스프레드 선택, 카드 뽑기 UI, 결과 표시
-  3. 백엔드(또는 서버리스): Gemini 호출 프록시
-- 코드 작성 시점에 이 절을 다시 채울 것.
+**구체화됨 — 라이브 운영 중.** 두 경로 모두 같은 카드 데이터(`public/cards/cards.json`)를 쓴다.
+
+1. **정적 경로 (GitHub Pages)** — https://gbox3d.github.io/talisman/. 2-step(`ids.json` → 무작위 → `{id}.json`), 서버리스 불필요.
+2. **라이브 뽑기 API (Deno Deploy 엣지)** — https://talisman.gbox3d.deno.net. `GET /api/{n}`·`/api/spread/{id}`가 비복원 뽑기 + 카드 JSON을 한 번에 응답. CORS `*`. 엔트리포인트 `deno/main.ts`(Deno.serve).
+3. **플랫폼**: 새 Deno Deploy(console.deno.com, `*.deno.net`). 구 Classic(`*.deno.dev`)은 2026-07-20 종료. 재배포 `scripts/deploy_edge.sh`(CLI, `--prod`) — Pages 자동 배포와는 별개.
+4. **다음(후보)**: Gemini 해석을 같은 엣지에 얹기(`?interpret=1`).
 
 ## 동작 규칙
 
 - 카드 데이터 스키마는 카드 수집 단계에서 확정하며, 이후 모든 기능(드로우, 해석, 스프레드)이 이 스키마를 기반으로 한다.
 - 카드 이미지와 메타데이터는 1:1 매칭되어야 한다 (이미지 파일명과 카드 ID 일치).
+- 라이브 API(`/api/{n}`)와 정적 경로는 같은 `cards.json`을 쓴다. 엣지 배포는 `scripts/deploy_edge.sh`로 별도 — Pages 자동 배포와 다르다.
 
 ## 반복 금지
 
