@@ -12,6 +12,7 @@ curl, Python, 앱 인벤터, JavaScript 등 어느 환경에서든 동일한 HTT
 ## 목차
 
 - [라이브 랜덤 뽑기 API (`/api/{n}`)](#라이브-랜덤-뽑기-api-apin)
+- [정적 API base 주소](#정적-api-base-주소)
 - [엔드포인트](#엔드포인트)
 - [응답 형식](#응답-형식)
 - [사용법 — 어느 환경에서나 동일한 GET](#사용법--어느-환경에서나-동일한-get)
@@ -114,11 +115,32 @@ deno deploy create --org gbox3d --app talisman \
 
 로컬 실행: `cd deno && deno task dev` → `http://localhost:8000/api/3`.
 
+## 정적 API base 주소
+
+정적 JSON/이미지 자산의 base 주소는 GitHub Pages에 배포된 **`https://gbox3d.github.io/talisman`** 입니다. 문서의 `{BASE}` 또는 코드 예제의 `STATIC_BASE`는 이 값을 의미합니다.
+
+```js
+const STATIC_BASE = 'https://gbox3d.github.io/talisman';
+
+const ids = await fetch(`${STATIC_BASE}/cards/ids.json`).then(r => r.json());
+const card = await fetch(`${STATIC_BASE}/cards/major_00_fool.json`).then(r => r.json());
+const imageUrl = new URL(card.image, `${STATIC_BASE}/`).href;
+```
+
+대표 정적 엔드포인트:
+
+- `https://gbox3d.github.io/talisman/cards/ids.json`
+- `https://gbox3d.github.io/talisman/cards/cards.json`
+- `https://gbox3d.github.io/talisman/cards/{id}.json`
+- `https://gbox3d.github.io/talisman/spreads.json`
+
+주의: 이 정적 base는 카드 데이터 파일을 직접 받는 주소입니다. 서버에서 무작위 뽑기까지 처리하는 한 번 호출 API는 별도 base인 `https://talisman.gbox3d.deno.net`의 `/api/{n}`을 사용하세요.
+
 ## 엔드포인트
 
 > 아래는 **① 서버 없이 (정적 2-step)** 경로입니다. 카드 데이터 원본이자, 위 라이브 API가 내부에서 사용하는 같은 데이터입니다.
 
-`{BASE}` = 정적 호스팅 루트. 예) `https://yourhost/taro` 또는 `https://username.github.io/talisman`.
+`{BASE}` = 정적 호스팅 루트. 현재 공개 base는 `https://gbox3d.github.io/talisman` 입니다. 직접 호스팅할 때는 `https://yourhost/taro` 또는 `https://username.github.io/talisman`처럼 바꿔 쓰면 됩니다.
 
 | 메서드 / 경로 | 응답 | 설명 |
 |---|---|---|
@@ -128,7 +150,7 @@ deno deploy create --org gbox3d --app talisman \
 | `GET {BASE}/cards/cards.json` | JSON | 78장 + 표지 2장 전체 메타 (한 번에 받기). |
 | `GET {BASE}/spreads.json` | JSON | 스프레드 정의 (single / three_card / situation_action_outcome). |
 
-CORS는 호스팅 환경에 따라 다릅니다. 이 저장소의 nginx 21080 노드에서는 `Access-Control-Allow-Origin: *`로 열려 있어 다른 origin에서도 호출 가능.
+CORS는 호스팅 환경에 따라 다릅니다. 현재 GitHub Pages 정적 base와 이 저장소의 nginx 21080 노드에서는 `Access-Control-Allow-Origin: *`로 열려 있어 다른 origin에서도 호출 가능.
 
 ## 응답 형식
 
@@ -184,13 +206,13 @@ CORS는 호스팅 환경에 따라 다릅니다. 이 저장소의 nginx 21080 �
 특정 카드 한 장:
 
 ```bash
-curl -s https://yourhost/taro/cards/major_00_fool.json | jq .
+curl -s https://gbox3d.github.io/talisman/cards/major_00_fool.json | jq .
 ```
 
 무작위 카드 1장 (2-step):
 
 ```bash
-BASE=https://yourhost/taro
+BASE=https://gbox3d.github.io/talisman
 ID=$(curl -s "$BASE/cards/ids.json" | jq -r '.ids[]' | shuf -n1)
 curl -s "$BASE/cards/$ID.json" | jq '{id, name_ko, keywords_upright, image}'
 ```
@@ -208,7 +230,7 @@ import json
 import random
 import urllib.request
 
-BASE = "https://yourhost/taro"
+BASE = "https://gbox3d.github.io/talisman"
 
 def get(path):
     with urllib.request.urlopen(f"{BASE}/{path}") as r:
@@ -231,7 +253,7 @@ for pos, cid in zip(spread["positions"], picked):
 ### JavaScript (브라우저 / Node)
 
 ```js
-const BASE = 'https://yourhost/taro';
+const BASE = 'https://gbox3d.github.io/talisman';
 
 const get = (path) => fetch(`${BASE}/${path}`).then(r => r.json());
 
@@ -262,9 +284,9 @@ Web 컴포넌트 1개로 가능:
 
 ```html
 <script type="module">
-  import { Tarot } from 'https://yourhost/taro/tarot.js';
+  import { Tarot } from 'https://gbox3d.github.io/talisman/tarot.js';
 
-  const tarot = await Tarot.load({ baseUrl: 'https://yourhost/taro/' });
+  const tarot = await Tarot.load({ baseUrl: 'https://gbox3d.github.io/talisman/' });
   console.log(tarot.draw(1));                      // 무작위 1장
   console.log(tarot.drawSpread('three_card'));     // 스프레드
 </script>

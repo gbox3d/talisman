@@ -84,6 +84,28 @@
       모두 CORS가 <code>*</code>로 열려 있어 다른 origin·앱 인벤터에서도 동일하게 호출됩니다.
     </p>
 
+    <section>
+      <h2>정적 API base 주소</h2>
+      <p>
+        정적 JSON/이미지 파일은 GitHub Pages의
+        <a href="https://gbox3d.github.io/talisman/" target="_blank" rel="noopener">https://gbox3d.github.io/talisman</a>
+        아래에 있습니다. 코드에서는 이 값을 <code>STATIC_BASE</code>로 두고 <code>/cards/...</code> 경로를 붙여 호출하면 됩니다.
+      </p>
+      <pre>const STATIC_BASE = 'https://gbox3d.github.io/talisman';
+
+const ids = await fetch(`${STATIC_BASE}/cards/ids.json`).then(r =&gt; r.json());
+const card = await fetch(`${STATIC_BASE}/cards/major_00_fool.json`).then(r =&gt; r.json());
+const imageUrl = new URL(card.image, `${STATIC_BASE}/`).href;</pre>
+      <p style="color:#9088a8;font-size:0.86rem;">
+        대표 정적 엔드포인트:
+        <code>/cards/ids.json</code>,
+        <code>/cards/cards.json</code>,
+        <code>/cards/{id}.json</code>,
+        <code>/spreads.json</code>.
+        무작위 뽑기까지 한 번에 처리하려면 아래 라이브 API base <code>https://talisman.gbox3d.deno.net</code>을 사용합니다.
+      </p>
+    </section>
+
     <section style="border-color:#c9a96e;">
       <h2>★ 라이브 API — 한 번의 GET으로 뽑기 (<code>/api/{n}</code>)</h2>
       <p>
@@ -120,9 +142,11 @@ const spread = await fetch('https://talisman.gbox3d.deno.net/api/spread/three_ca
       <h2>1) Tarot 라이브러리로 한 줄 호출 (정적, 권장)</h2>
       <p>같은 페이지에서 ESM 모듈로 불러와 <code>draw(n)</code> / <code>drawSpread(id)</code>를 호출합니다.</p>
       <pre>&lt;script type="module"&gt;
-import { Tarot } from '/taro/tarot.js';
+import { Tarot } from 'https://gbox3d.github.io/talisman/tarot.js';
 
-const tarot = await Tarot.load();
+const tarot = await Tarot.load({
+  baseUrl: 'https://gbox3d.github.io/talisman/',
+});
 const result = tarot.drawSpread('three_card');   // 또는 tarot.draw(1)
 console.log(result);
 &lt;/script&gt;</pre>
@@ -134,13 +158,15 @@ console.log(result);
     <section>
       <h2>2) 라이브러리 없이 순수 fetch로 호출 (API처럼)</h2>
       <p>라이브러리를 안 쓰고 JSON만 받아도 됩니다. 카드를 뽑는 로직은 호출 측에서 직접 구현.</p>
-      <pre>const res  = await fetch('/taro/cards/cards.json');
+      <pre>const STATIC_BASE = 'https://gbox3d.github.io/talisman';
+
+const res  = await fetch(`${STATIC_BASE}/cards/cards.json`);
 const data = await res.json();
 const pick = data.cards[Math.floor(Math.random() * data.cards.length)];
 
 console.log(pick.id, pick.name_ko, pick.keywords_upright);
 // 이미지 URL은 'cards/...' 상대 경로이므로 base와 결합:
-const imageUrl = new URL(pick.image, 'https://your-host/taro/').href;</pre>
+const imageUrl = new URL(pick.image, `${STATIC_BASE}/`).href;</pre>
       <button id="btn-fetch">fetch + 무작위 1장 실행</button>
       <div id="fetch-cards" class="cards-out"></div>
       <pre id="fetch-out" class="out">아직 실행 안 함</pre>
@@ -150,17 +176,19 @@ const imageUrl = new URL(pick.image, 'https://your-host/taro/').href;</pre>
       <h2>3) 다른 도메인 / 다른 페이지에서 호출</h2>
       <p>완전히 별개 origin에서도 동일하게 동작합니다 (CORS 열려 있음):</p>
       <pre>// 다른 사이트의 페이지에서:
-const url = 'http://&lt;이 서버의 호스트&gt;:21080/taro/cards/cards.json';
-const data = await (await fetch(url)).json();
+const STATIC_BASE = 'https://gbox3d.github.io/talisman';
+const data = await fetch(`${STATIC_BASE}/cards/cards.json`).then(r =&gt; r.json());
 console.log(data.count_cards, '장 로드');</pre>
       <p>또는 라이브러리를 절대 URL로 import:</p>
-      <pre>const { Tarot } = await import('http://&lt;호스트&gt;:21080/taro/tarot.js');
-const tarot = await Tarot.load();
+      <pre>const { Tarot } = await import('https://gbox3d.github.io/talisman/tarot.js');
+const tarot = await Tarot.load({
+  baseUrl: 'https://gbox3d.github.io/talisman/',
+});
 console.log(tarot.draw(1));</pre>
     </section>
 
     <p style="margin-top:2.5rem;color:#9088a8;font-size:0.85rem;">
-      라이브 API: <a href="https://talisman.gbox3d.deno.net/">talisman.gbox3d.deno.net</a> · 메인 데모 페이지: <a href="./">/taro/</a> · 라이브러리 소스: <a href="./tarot.js">/taro/tarot.js</a> · 카드 데이터: <a href="./cards/cards.json">/taro/cards/cards.json</a>
+      정적 API base: <a href="https://gbox3d.github.io/talisman/">gbox3d.github.io/talisman</a> · 라이브 API: <a href="https://talisman.gbox3d.deno.net/">talisman.gbox3d.deno.net</a> · 메인 데모 페이지: <a href="./">/talisman/</a> · 라이브러리 소스: <a href="./tarot.js">/talisman/tarot.js</a> · 카드 데이터: <a href="./cards/cards.json">/talisman/cards/cards.json</a>
     </p>
   </main>
 
@@ -169,6 +197,7 @@ console.log(tarot.draw(1));</pre>
 
     // ★ 라이브 엣지 API — 한 번의 GET (Tarot 라이브러리 불필요, 순수 fetch)
     const API = 'https://talisman.gbox3d.deno.net';
+    const STATIC_BASE = 'https://gbox3d.github.io/talisman';
 
     document.getElementById('btn-api').addEventListener('click', async () => {
       const $out = document.getElementById('api-out');
@@ -215,10 +244,10 @@ console.log(tarot.draw(1));</pre>
 
     // 예제 2 — 순수 fetch
     document.getElementById('btn-fetch').addEventListener('click', async () => {
-      const res = await fetch('./cards/cards.json');
+      const res = await fetch(`${STATIC_BASE}/cards/cards.json`);
       const data = await res.json();
       const card = data.cards[Math.floor(Math.random() * data.cards.length)];
-      const imageUrl = new URL(card.image, location.href).href;
+      const imageUrl = new URL(card.image, `${STATIC_BASE}/`).href;
       renderCards('fetch-cards', [{ label: '뽑힌 카드', card: { ...card, image_url: imageUrl, orientation: 'upright' } }]);
       document.getElementById('fetch-out').textContent = JSON.stringify(
         { id: card.id, name_ko: card.name_ko, keywords_upright: card.keywords_upright, image_url: imageUrl },
